@@ -12,6 +12,7 @@ function Navbar() {
                     {/*<div>*/}
                     {/*    Logo aqui*/}
                     {/*</div>*/}
+
                     <div>
                         <li><a href="#sobremi">Sobre mi</a></li>
                         <li><a href="#contactame">Contacto</a></li>

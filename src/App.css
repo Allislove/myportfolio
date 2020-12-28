@@ -35,7 +35,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #14141c;
+  background: #1D4350;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #A43931, #1D4350);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #A43931, #1D4350); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
   /*margin: 20px;*/
   /*padding: 20px;*/
 
@@ -57,6 +61,7 @@
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 li:hover {
@@ -85,10 +90,11 @@ section .sendMessage {
   margin: 20px;
 }
 
-/*img {*/
-/*  max-width: 100%;*/
-/*  max-height: 100%;*/
-/*  background-size: contain;*/
-/*}*/
+footer {
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #e74c3c, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #e74c3c, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
 
+}
 

@@ -6,7 +6,7 @@ function About() {
         <section className='Aboutme shadow-lg p-3 mb-5 bg-white rounded'>
             <div className='Aboutme-container row align-items-start'>
                 <div className='col AboutmePhoto aboutCards '>
-                    <img src="/src/assets/pictures/maestroYoda.jpg" alt="Andres Romana" width='700px' height='500px'/>
+                    <img src="https://cdn.icon-icons.com/icons2/2630/PNG/512/diversity_avatar_man_people_person_black_muslim_boy_icon_159082.png" alt="Allislove" width='700px' height='500px'/>
                 </div>
 
                 <div className='col AboutmeText aboutCards'>
