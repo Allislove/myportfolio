@@ -29,7 +29,7 @@ function Portfolio() {
             <p> <strong className='text-center'> Mi Portafolio </strong></p>
              <p> Todos estos sitios web han sido creados con el proposito de adquirir conocimientos, tanto en html
             como en JavaScript y React, y otras librerias para poder desempeñarme de una manera agil en proyectos reales.</p>
-            <div className="row align-items-center">
+            <div className="row align-items-start">
                 <div className="col portfolioworks card1">
                     <b> Pokedex </b>
                     <p> Pagina web para filtrar pokemones por estadisticas y tipo.</p>

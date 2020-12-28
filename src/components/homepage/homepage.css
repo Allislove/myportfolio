@@ -40,23 +40,17 @@ section.Aboutme {
 }
 
 .aboutCards {
-    width: 700px;
-    height: 500px;
+    /*width: 700px;*/
+    /*height: 500px;*/
     background-size: cover;
     background-color: white;
-    /*animation-name: aboutAnimation;*/
-    /*animation-duration: 2s;*/
+    padding: 4px;
+
 }
 
-/*@keyframes aboutAnimation {*/
-/*    from { background-color: white;}*/
-/*    to { background-color: dodgerblue;}*/
-/*}*/
 
 .aboutCards:hover {
-    /*border: 4px solid black;*/
-    padding: 10px;
-    /*background-color: #cae3ff;*/
+    padding: 2px;
 }
 
 .Technology {
@@ -127,7 +121,6 @@ section.Aboutme {
     margin: 10px ;
     padding: 10px;
     text-align: center;
-    /*border: 1px solid dodgerblue;*/
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     flex-wrap: wrap;

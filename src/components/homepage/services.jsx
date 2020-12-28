@@ -38,8 +38,8 @@ function MyServices() {
             <div className="row align-items-start">
                 <div className="col activeservices card1">
                     <p>
-                        <b> DISEÑO WEB </b> <br/> <br/>
-
+                        <b> DISEÑO WEB </b>
+                        <br/> <br/>
                         Páginas web preparadas con responsive design, en otras palabras adaptadas a móviles y tablets.
                         Modernos estándares y todo optimizado paraun buen posicionamiento en Google (SEO y SEM).
                     </p>

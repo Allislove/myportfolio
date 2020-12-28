@@ -71,8 +71,8 @@ li:hover {
 .menuown div {
   display: flex;
   flex-wrap: wrap;
-  margin: 40px;
-  padding: 30px;
+  margin: 10px;
+  padding: 10px;
 
 }
 
@@ -98,3 +98,41 @@ footer {
 
 }
 
+
+@media (min-width: 400px) {
+  .activeservices, .portfolioworks {
+    width: 100%;
+    color: #090807;
+    flex-wrap: wrap;
+  }
+}
+
+
+/*!*@media (min-width: 576px) {*!*/
+/*!*  .activeservices, .portfolioworks {*!*/
+/*!*    width: 100%;*!*/
+/*!*    color: #0f54f5;*!*/
+/*!*    flex-wrap: wrap;*!*/
+/*!*  }*!*/
+/*!*}*!*/
+
+/*!*@media (min-width: 768px) {*!*/
+/*!*  .activeservices, .portfolioworks {*!*/
+/*!*    width: 50%;*!*/
+/*!*    color: green;*!*/
+/*!*  }*!*/
+/*!*}*!*/
+
+/*!*@media (min-width: 992px) {*!*/
+/*!*  .activeservices, .portfolioworks {*!*/
+/*!*    width: 100%;*!*/
+/*!*    color: #e74c3c;*!*/
+/*!*  }*!*/
+/*!*}*!*/
+
+/*!*@media (min-width: 1200px) {*!*/
+/*!*  .activeservices, .portfolioworks {*!*/
+/*!*    width: 50%;*!*/
+/*!*    color: #e7bc3c;*!*/
+/*!*  }*!*/
+/*}*/
