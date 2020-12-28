@@ -23,6 +23,10 @@ class Footer extends React.Component {
                         <p className="alt-font">Programador Web Colombia 2020</p>
                         <p>Andrés Romaña</p>
                     </div>
+
+                    <div className="buildwith mt-20">
+                        <b>Pagina Web constuida con <a href="https://es.reactjs.org/"> React</a> </b>
+                    </div>
                 </div>
 
             </footer>
