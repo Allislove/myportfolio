@@ -98,7 +98,11 @@ footer {
 
 }
 
+.buildwith {
+  font-size: 12px;
+}
 
+/* Media queries*/
 @media (min-width: 400px) {
   .activeservices, .portfolioworks {
     width: 100%;
@@ -106,6 +110,8 @@ footer {
     flex-wrap: wrap;
   }
 }
+
+
 
 
 /*!*@media (min-width: 576px) {*!*/
