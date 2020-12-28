@@ -4,12 +4,12 @@
 function About() {
     return(
         <section className='Aboutme shadow-lg p-3 mb-5 bg-white rounded'>
-            <div className='Aboutme-container'>
-                <div className='AboutmePhoto aboutCards'>
-                    <img src="https://i.pinimg.com/originals/3a/3d/3a/3a3d3a22c3137917c9ec3f34d43f232a.jpg" alt="My Own Picture" width='700px' height='500px'/>
+            <div className='Aboutme-container row align-items-start'>
+                <div className='col AboutmePhoto aboutCards '>
+                    <img src="/src/assets/pictures/maestroYoda.jpg" alt="Andres Romana" width='700px' height='500px'/>
                 </div>
 
-                <div className='AboutmeText aboutCards'>
+                <div className='col AboutmeText aboutCards'>
                     <p id='sobremi'>
                         Hola! Me llamo <strong>Andrés Romaña, </strong> Soy un <strong> Freelance Full Stack Developer</strong> (Front-End + Backend) <br/>
                         con sede en Medellin-Colombia, especializado en Programación Web y Desarrollo de APIs.
