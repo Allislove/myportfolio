@@ -1,38 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+
+
+}
+
+
 .App {
-  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/*body {*/
+/*  font-family: 'Raleway', sans-serif;*/
+/*  font-size: 24px;*/
+/*}*/
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+/*header {*/
+/*  background-image: url("https://programadorwebvalencia.com/img/web/espacio.jpg");*/
+/*  !*margin: 40px;*!*/
+
+
+/*}*/
+
+/*body {*/
+/*  width: border-box;*/
+/*}*/
+
+/* Contenedor padre para el menu de mi portfolio*/
+.menuown {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  background-color: #14141c;
+  /*margin: 20px;*/
+  /*padding: 20px;*/
+
+
+
+
+
+}
+
+/* Definiendo la estructura de las cajas div para las listas*/
+.menuown div li {
+  display: flex;
+  list-style: none;
+  padding: 10px;
+  margin: 10px;
+  background-color: #ffffff;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+li:hover {
+  background-color: darkred;
+}
+
+.menuown div {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px;
+  padding: 30px;
+
+}
+
+
+.emailMessage {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+}
+section .sendMessage {
+  background-color: rgb(251, 207, 101);
+  padding: 20px;
+  margin: 20px;
 }
 
-.App-link {
-  color: #61dafb;
-}
+/*img {*/
+/*  max-width: 100%;*/
+/*  max-height: 100%;*/
+/*  background-size: contain;*/
+/*}*/
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
