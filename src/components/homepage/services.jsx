@@ -41,7 +41,7 @@ function MyServices() {
                         <b> DISEÑO WEB </b>
                         <br/> <br/>
                         Páginas web preparadas con responsive design, en otras palabras adaptadas a móviles y tablets.
-                        Modernos estándares y todo optimizado paraun buen posicionamiento en Google (SEO y SEM).
+                        Modernos estándares y todo optimizado para un buen posicionamiento en Google (SEO y SEM).
                     </p>
                 </div>
                 <div className="col activeservices card2">
@@ -58,7 +58,7 @@ function MyServices() {
                         <b> TIENDAS VIRTUALES  </b>
                         <br/> <br/>
                         Creación de tiendas con todas las herramientas necesarias para su administración.
-                        A medida o personalizando un CMS como Prestashop o WordPress (WooCommerce).
+                        A medida o personalizando un CMS como Prestashop, Shopify o WordPress (WooCommerce).
                     </p>
                 </div>
             </div>

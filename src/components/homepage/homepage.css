@@ -40,8 +40,6 @@ section.Aboutme {
 }
 
 .aboutCards {
-    /*width: 700px;*/
-    /*height: 500px;*/
     background-size: cover;
     background-color: white;
     padding: 4px;
@@ -49,9 +47,9 @@ section.Aboutme {
 }
 
 
-.aboutCards:hover {
-    padding: 2px;
-}
+/*.aboutCards:hover {*/
+/*    padding: 2px;*/
+/*}*/
 
 .Technology {
     display: flex;
@@ -94,9 +92,6 @@ section.Aboutme {
     align-items: center;
     margin: 40px;
     padding: 20px;
-    /*background-color: #000a1d;*/
-    /*color: white;*/
-    /*border: 1px solid red;*/
 
 }
 
@@ -117,9 +112,9 @@ section.Aboutme {
 /* Tarjetas */
 .activeservices, .portfolioworks {
     width: 30%;
-    height: auto;
+    height: 400px;
     margin: 10px ;
-    padding: 10px;
+    padding: 40px;
     text-align: center;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
@@ -129,17 +124,14 @@ section.Aboutme {
 
 /* Tarjetas de la mitad*/
 .card2 {
-    border: 1px solid tomato;
+    border: 2px solid #fa4646;
 }
 
 /* Hover de  tarjetas*/
 .activeservices:hover, .portfolioworks:hover {
-    /*border: 3px solid orangered;*/
-    box-shadow: 10px 5px 10px 4px #14141c;
-    background-color: #508afd;
-    color: whitesmoke;
-    border-radius: 10px;
-    transition: margin .2s ease-in-out,padding .2s ease-in-out,transform .6s ease-in-out,opacity .3s ease-in-out;
+    box-shadow: -4px -6px 16px;
+    color: black;
+    /*transition: margin .2s ease-in-out,padding .2s ease-in-out,transform .6s ease-in-out,opacity .3s ease-in-out;*/
 
 }
 
