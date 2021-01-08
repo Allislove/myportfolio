@@ -8,15 +8,15 @@ class Footer extends React.Component {
                 <div className="container text-center">
                     <div className="social-links">
                         <a href="https://twitter.com/Gamershere_" title="Twitter" target="_blank" rel="noreferrer">
-                            <img src="https://icon-icons.com/icons2/1/PNG/32/social_Twitter_38.png" alt="Andres Romaña Twitter" width="32" height="32"/>
+                            <i className="fab fa-twitter" ></i>
+
                         </a>
 
                         <a href="https://www.linkedin.com/in/andres-romana/" title="Linkedin" target="_blank" rel="noreferrer">
-                            <img src="https://icon-icons.com/icons2/936/PNG/32/linkedin-sign_icon-icons.com_73508.png" alt="Andres RomanaLinkedIn" width="32" height="32"/>
+                            <i className="fab fa-linkedin"></i>
                         </a>
                         <a href="https://github.com/Allislove/" title="Github" target="_blank" rel="noreferrer">
-                            <img src="https://icon-icons.com/icons2/936/PNG/32/github-logo_icon-icons.com_73546.png" alt="github.com/Allislove" width="32" height="32"/>
-
+                            <i className="fab fa-github-square"></i>
                         </a>
                     </div>
                     <div className="copy-right mt-50">
