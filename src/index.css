@@ -1,13 +1,112 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+html {
+  display: block;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 17px;
+  line-height: 1.4705882353;
+  background-color: #fff;
+  color: #1d1d1f;
+  font-style: normal;
+  letter-spacing: -0.022em;
+  font-weight: 400;
+  font-variant-ligatures: normal;
+}
+
+.ioform {
+  margin: 20 auto;
+  padding: 40px;
+}
+
+form {
+  margin: 20px auto;
+  margin-top: 20px;
+  padding: 40px;
+  border: 1px solid;
+  box-shadow: 0px 0px 5px #ccc;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+.notAnclas,
+a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/* footer */
+
+.social-nw {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.blogcontent a {
+  color: #000;
+  text-decoration: none;
+}
+
+h1 {
+  margin-top: 40px;
+}
+
+img {
+  background-size: cover;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgba(15, 0, 0, 0.5);
+}
+
+pre {
+  border-radius: 4px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 100%;
+  overflow-x: auto;
+  background-color: #f3f3f3;
+  border: 1px solid;
+  border-color: #ddd rgb(185, 185, 185) #ccc;
+  border-radius: 2px;
+  box-shadow: inset 0 0 10px #ddd;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  color: #000;
+  text-shadow: 0 1px #fff;
+  font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  tab-size: 4;
+  -ms-hyphens: none;
+  hyphens: none;
 }
