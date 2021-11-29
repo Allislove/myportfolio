@@ -15,7 +15,7 @@ const Post = () => {
       const gettingPost = async () => {
         await api.get(postById).then((response) => {
           const post = response.data;
-          console.log(post);
+          // console.log(post);
     
           setPost(post);
         });

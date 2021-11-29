@@ -10,7 +10,7 @@ export default function Users() {
   const gettingUsers = async() => {
     api.get(allUsers).then((response) => {
       const users = response.data;
-      console.log(users)
+      // console.log(users)
       setUsers(users);
     });
 

@@ -39,9 +39,9 @@ export default class Login extends React.Component {
         this.state
       )
       .then((res) => {
-        console.log(res);
+        // console.log(res);
         const data = res.data;
-        console.log(data);
+        // console.log(data);
         if (data.token) {
          // console.log("Usuario logeado!");
          // console.log(data.token);

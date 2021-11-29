@@ -13,7 +13,7 @@ function Posts() {
   const gettingPosts = async () => {
     api.get(allPosts).then((response) => {
       const posts = response.data;
-      console.log(posts);
+      // console.log(posts);
 
       setPosts(posts);
     });
