@@ -38,7 +38,7 @@ const Post = () => {
                   { post.codeExplanation ? <pre> <code> {post.codeExplanation} </code> </pre> : null }
                    <br />
                   { post.urlExternal ? <b> Quieres aprender mas? </b> : null }
-                  { post.urlExternal ? <a href={post.urlExternal}>{post.urlExternal} </a>  : null }
+                  { post.urlExternal ? <a href={post.urlExternal} target="_blank" title="learning" rel="noopener noreferrer"   >{post.urlExternal} </a>  : null }
 
                 </div>
               </div>
