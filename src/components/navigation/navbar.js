@@ -10,7 +10,8 @@ import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-d
 import Posts from "../views/posts/posts";
 import Post from "../views/posts/post";
 import Nav from './nav';
-import UserIsNotLogged from './userIsNotLogged'
+import UserIsNotLogged from './userIsNotLogged';
+import Error from "../views/helpers/error404";
 
 const Navbar = (props) => {
   const userIsLogged = localStorage.getItem('token') 
@@ -20,6 +21,9 @@ const Navbar = (props) => {
       {userIsLogged ? <Nav /> : <UserIsNotLogged />  }
 
       <Switch>
+      <Route exact path="/">
+          <Home />
+        </Route>
         <Route exact path="/blog/:id">
           <Post />
         </Route>
@@ -48,10 +52,11 @@ const Navbar = (props) => {
         <Route exact path="/logout">
           <Home />
         </Route>
-        {/* La ruta principal debe ser definida de ultima, para que no obstaculice las demas! */}
-        <Route exact path="/">
-          <Home />
+        <Route path="*">
+          <Error />
         </Route>
+        {/* La ruta principal debe ser definida de ultima, para que no obstaculice las demas! */}
+
       </Switch>
     </Router>
   );
