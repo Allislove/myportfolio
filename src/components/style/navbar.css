@@ -1,0 +1,53 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  padding-top: 100px !important;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin-top: 14px;
+  margin: 0 auto;
+  font-size: 14px;
+  letter-spacing: 1px;
+  backdrop-filter: blur(10 px);
+  -webkit-backdrop-filter: blur(10px);
+  height: 50px;
+} 
+
+.navbar ul li a {
+  display: flex;
+  text-decoration: none;
+  background-color: #333;
+  text-align: center;
+  margin: 10px;
+  padding: 0.5rem;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.5s ease-out;
+  list-style: none;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a:focus {
+  background-color: rgb(255, 0, 0);
+  color: #333;
+  transition: 0.1s;
+}
+
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+  .navbar ul {
+    display: flex;
+    flex-direction: column; 
+    height: 100px;
+    margin-top: 10px;
+  }
+}

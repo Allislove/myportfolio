@@ -1,0 +1,57 @@
+.intro-latest-posts {
+    display: flex;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.s-twoposts {
+    display: flex !important;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  
+  }
+.anclas {
+    flex-wrap: wrap;
+    margin: 4px;
+    padding: 4px;
+}
+
+.anclas:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    margin: 0 auto;
+    transform: transparent;
+}
+
+.ITSME {
+    color: rgba(0, 0, 0, 0.205);
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .s-twoposts {
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        width: 100% !important;
+    }
+    .anclas {
+        flex-wrap: wrap;
+        margin: 4px;
+        padding: 4px;
+    }
+    .anclas:hover {
+        cursor: pointer;
+        display: block;
+    }
+  }
