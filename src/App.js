@@ -1,30 +1,15 @@
+import React from 'react';
+import Navbar from './components/navigation/navbar';
+import Footer from './components/views/footer/footer';
 import './App.css';
-
-import Navbar from "./components/navigation/navbar";
-// import Intro from "./components/homepage/intro";
-import About from "./components/homepage/About";
-import SendMessage from "./components/homepage/sendMessage";
-import Technologies from "./components/homepage/technologies";
-import MyServices from "./components/homepage/services";
-import Portfolio from "./components/homepage/myportafolio";
-import Footer from "./components/homepage/footer";
+import Mobilemenu from './components/navigation/mobilemenu';
 
 function App() {
   return (
-    <div className="App">
-        {/*<Intro />*/}
+    <div className="container-sm">
+      <Mobilemenu />
       <Navbar />
-      <About/>
-      <SendMessage/>
-      <Technologies/>
-      <MyServices />
-      <Portfolio />
-      <SendMessage/>
       <Footer />
-
-
-
-
     </div>
   );
 }

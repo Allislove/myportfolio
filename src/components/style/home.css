@@ -1,0 +1,19 @@
+/* Control principal cajas */
+.main {
+    display: block;
+    flex-direction: column;
+    padding: 6px;
+    margin-top: 10px;
+    max-width: 800px !important;
+    margin: 0 auto;  
+    margin-top: 40px;  
+}
+
+/* Media queries */
+@media only scrend and (max-width: 600px) {
+    .main {
+        margin-top: 40px;
+        max-width: 100%;
+        background-color: rgb(221, 78, 78);
+    }
+}
