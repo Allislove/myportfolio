@@ -23,7 +23,6 @@
     border-radius: 4px;
     box-shadow: 0 6px 8px rgb(0 0 0 / 7%);
     backdrop-filter: blur(20 px );
-    z-index: 2;
     margin: 20px auto;
     transition: all 0.3s ease;
     height: auto;
@@ -33,7 +32,6 @@
     width: 180px;
     height: 300px;
     flex-grow: 3;
-
 }
 
 

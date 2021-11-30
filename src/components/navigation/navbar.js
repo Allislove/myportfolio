@@ -18,8 +18,8 @@ const Navbar = (props) => {
 
   return (
     <Router>
-      {userIsLogged ? <Nav /> : <UserIsNotLogged />  }
-
+      {userIsLogged ? <Nav /> : <UserIsNotLogged /> }
+      
       <Switch>
       <Route exact path="/">
           <Home />

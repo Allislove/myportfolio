@@ -18,7 +18,7 @@
   backdrop-filter: blur(10 px);
   -webkit-backdrop-filter: blur(10px);
   height: 50px;
-} 
+}
 
 .navbar ul li a {
   display: flex;
@@ -41,13 +41,9 @@
   transition: 0.1s;
 }
 
-
 /* Media queries */
-@media only screen and (max-width: 768px) {
-  .navbar ul {
-    display: flex;
-    flex-direction: column; 
-    height: 100px;
-    margin-top: 10px;
+@media only screen and (max-width: 600px) {
+  #menu__mobile {
+    display: none;
   }
 }

@@ -7,8 +7,8 @@ const Nav = () => {
     window.location.href = "/";
   };
 
-  const user = localStorage.getItem("token");
-  console.log(user);
+  // const user = localStorage.getItem("token");
+  // console.log(user);
 
   return (
     <nav className="navbar">
