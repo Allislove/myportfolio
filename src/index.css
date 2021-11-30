@@ -78,6 +78,22 @@ h1 {
   margin-top: 40px;
 }
 
+h1.posts__titles {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #000007;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  letter-spacing: -0.022em;
+ 
+}
+
 img {
   background-size: cover;
 }
@@ -115,4 +131,26 @@ code {
   tab-size: 4;
   -ms-hyphens: none;
   hyphens: none;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 17px;
+    line-height: 1.4705882353;
+    background-color: #fff;
+    color: #1d1d1f;
+    font-style: normal;
+    letter-spacing: -0.022em;
+    font-weight: 500;
+    font-variant-ligatures: normal;
+    padding-top: 50px;
+    margin-top: 10px;
+  }
+
 }
