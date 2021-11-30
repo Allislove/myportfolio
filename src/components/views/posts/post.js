@@ -29,11 +29,11 @@ const Post = () => {
   if (!post) return "Cargando contenido";
 
   return (
-    <div className="main-blog-content">
+    <section className="main-blog-content">
       <div className="row blog">
               <div className="row justify-content-center blogbypost">
                 <div className="col blogcontentpost">
-                  <h3> {post.title} </h3>
+                  <h1 className="posts__titles"> {post.title} </h1>
                   <p> {post.content} </p>
                   { post.codeExplanation ? <pre> <code> {post.codeExplanation} </code> </pre> : null }
                    <br />
@@ -43,7 +43,7 @@ const Post = () => {
                 </div>
               </div>
             </div>
-    </div>
+    </section>
   );
 };
 

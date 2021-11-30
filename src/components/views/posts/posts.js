@@ -43,7 +43,7 @@ function Posts() {
             <div className="row blog">
               <div className="row justify-content-center blogcontent blogpostcards">
                 <div className="col bcontent">
-                  <h3> {post.title} </h3>
+                  <h1 className="posts__titles"> {post.title} </h1>
                   <p> {post.content} </p>
                 </div>
               </div>
