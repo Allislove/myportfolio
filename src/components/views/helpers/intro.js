@@ -7,7 +7,7 @@ export default function Intro() {
     return(
         <div className="container mt-5"> 
             <div className="text-center">
-                <img src={Profileimage} className="rounded img-fluid" alt="Andrés Romaña" />
+                <img src={Profileimage} className="rounded img-fluid" alt="javascript js" />
                 <div className="ITSME"> A F R R</div>
             </div>
 
