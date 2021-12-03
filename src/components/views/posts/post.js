@@ -16,7 +16,8 @@ const Post = () => {
         await api.get(postById).then((response) => {
           const post = response.data;
           // console.log(post);
-    
+          // console.log(post.title);
+          document.title = post.title;
           setPost(post);
         });
       };

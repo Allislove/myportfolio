@@ -77,11 +77,11 @@ export default function Footer() {
           {" "}
           powered by{" "}
           <a
-            href="https://es.reactjs.org/"
+            href="https://www.netlify.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            React.js
+            Netlify
           </a>{" "}
           © {year} All rights reserved.{" "}
         </p>
