@@ -27,3 +27,11 @@
     margin: 0;
     padding: 0;
 }
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+    .blacklm {
+        display: none;
+    }
+}
