@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import '../../style/post.css'
 import api from '../../../axios.config';
+const readingTime = require('reading-time');
 
 
 const Post = () => {
@@ -26,7 +27,8 @@ const Post = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-
+  const fullPostContent = post.title + post.content;
+  const stats = readingTime(fullPostContent);
   if (!post) return "Cargando contenido";
 
   return (
@@ -35,6 +37,7 @@ const Post = () => {
               <div className="row justify-content-center blogbypost">
                 <div className="col blogcontentpost">
                   <h1 className="posts__titles"> {post.title} </h1>
+                  <p className="reading-time"> {stats.text} - LET'S DO IT </p>
                   <p> {post.content} </p>
                   { post.codeExplanation ? <pre> <code> {post.codeExplanation} </code> </pre> : null }
                    <br />
