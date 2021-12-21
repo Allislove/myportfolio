@@ -314,3 +314,14 @@ input[type="checkbox"]{
 }
 
 
+.reading-time {
+  color: rgba(117, 117, 117, 1);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: left;
+  text-transform: none;
+
+}
