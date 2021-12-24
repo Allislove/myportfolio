@@ -15,7 +15,7 @@ export default function Aboutme() {
           en desarrollo web, tengo 24 años y experiencia de 1 año como
           desarrollador de software, principalmente en Backend. Cuento con
           conocimientos respaldados por experiencia laboral en lenguajes de
-          programación como <b>JavaScript</b>, <b>Java</b> <b>Python</b> y
+          programación como <b>JavaScript</b>, <b>Java</b>, <b>Python</b> y
           <b>Php</b> donde he tenido la oportunidad de utilizar frameworks y
           librerías de desarrollo como React, Vue, Express, Spring, NetBeans,
           Prisma ORM, Sequelize entre otras, y utilizo JavaScript con el entorno
