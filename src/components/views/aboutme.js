@@ -29,12 +29,6 @@ export default function Aboutme() {
           persona autodidacta, y asi poder desarrollar mis habilidades como un
           Desarrollador de Software.
         </p>
-
-        <p className="aboutme">
-          Abajo podras conectar conmigo en mis redes sociales, donde puedes
-          encontrar los código de mi portafolio, donde puedes ver mis proyectos
-          realizados.
-        </p>
       </div>
     </div>
   );
