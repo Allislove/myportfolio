@@ -14,13 +14,18 @@ const Post = () => {
 
   useEffect(() => {
       const gettingPost = async () => {
-        await api.get(postById).then((response) => {
-          const post = response.data;
-          // console.log(post);
-          // console.log(post.title);
-          document.title = post.title;
-          setPost(post);
-        });
+        try {
+          await api.get(postById).then((response) => {
+            const post = response.data;
+            // console.log(post);
+            // console.log(post.title);
+            document.title = post.title;
+            setPost(post);
+          });
+        } catch (error) {
+          console.error(error);
+          return error;
+        }
       };
     
     gettingPost();

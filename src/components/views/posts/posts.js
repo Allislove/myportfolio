@@ -11,13 +11,19 @@ function Posts() {
   const [posts, setPosts] = useState([]);
 
   const gettingPosts = async () => {
-    api.get(allPosts).then((response) => {
-      const posts = response.data;
-      //console.log(posts);
-
-      setPosts(posts.reverse());
-    });
+    try {
+      api.get(allPosts).then((response) => {
+        const posts = response.data;
+        //console.log(posts);
+  
+        setPosts(posts.reverse());
+      });
+      
+    } catch (error) {
+      console.error(error);
+    }
   };
+
 
   useEffect(() => {
     gettingPosts();

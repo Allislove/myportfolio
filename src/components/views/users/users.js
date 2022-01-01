@@ -8,11 +8,16 @@ export default function Users() {
   const [users, setUsers] = useState([]);
 
   const gettingUsers = async() => {
-    api.get(allUsers).then((response) => {
-      const users = response.data;
-      // console.log(users)
-      setUsers(users);
-    });
+    try {
+      api.get(allUsers).then((response) => {
+        const users = response.data;
+        // console.log(users)
+        setUsers(users);
+      });
+    } catch (error) {
+      console.eror(error);
+      return error;
+    }
 
   }
 
