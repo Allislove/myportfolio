@@ -15,7 +15,9 @@
 
       gtag("js", new Date());
 
-      gtag("config", "G-99RKYNEL6S");
+      gtag("config", "G-99RKYNEL6S", {
+        cookie_expires: 28 * 24 * 60 * 60, // 28 days, in seconds
+      });
     </script>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />

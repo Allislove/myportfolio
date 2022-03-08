@@ -34,7 +34,7 @@ const Post = () => {
 
   const fullPostContent = post.title + post.content;
   const stats = readingTime(fullPostContent);
-  if (!post) return "Cargando contenido";
+  if (!post) return "Cargando contenido...";
 
   return (
     <section className="main-blog-content">
@@ -42,12 +42,12 @@ const Post = () => {
               <div className="row justify-content-center blogbypost">
                 <div className="col blogcontentpost">
                   <h1 className="posts__titles"> {post.title} </h1>
-                  <p className="reading-time"> {stats.text} - LET'S DO IT </p>
+                  <p className="reading-time"> {stats.text}</p>
                   <p> {post.content} </p>
                   { post.codeExplanation ? <pre> <code> {post.codeExplanation} </code> </pre> : null }
                    <br />
                   { post.urlExternal ? <b> Quieres aprender mas? </b> : null }
-                  { post.urlExternal ? <a href={post.urlExternal} target="_blank" title="learning" rel="noopener noreferrer"   >{post.urlExternal} </a>  : null }
+                  { post.urlExternal && post.urlExternal.startsWith("https") ? <a href={post.urlExternal} target="_blank" title="learning" rel="noopener noreferrer"   >{post.urlExternal} </a>  : <a href={post.urlExternal} title="learning" rel="noopener noreferrer">{post.urlExternal} </a> }
 
                 </div>
               </div>
