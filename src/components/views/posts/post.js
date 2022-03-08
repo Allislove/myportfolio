@@ -42,7 +42,7 @@ const Post = () => {
               <div className="row justify-content-center blogbypost">
                 <div className="col blogcontentpost">
                   <h1 className="posts__titles"> {post.title} </h1>
-                  <p className="reading-time"> {stats.text} - LET'S DO IT </p>
+                  <p className="reading-time"> {stats.text}</p>
                   <p> {post.content} </p>
                   { post.codeExplanation ? <pre> <code> {post.codeExplanation} </code> </pre> : null }
                    <br />
