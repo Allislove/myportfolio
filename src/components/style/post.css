@@ -30,6 +30,9 @@
     margin: 0 auto;  
     margin-top: 10px;  
     border-color: brown;
+    font-size: 17px;
+    line-height: 1.5294717647;
+    letter-spacing: -0.021em;
 }
 
 /* Media Queries */
