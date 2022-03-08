@@ -21,6 +21,7 @@ import Error from "../views/helpers/error404";
 /* Rutas estaticas IMPORTS*/
 import Estado from "../views/helpers/writingPosts/allTopics/react/estado";
 import HooksGuide from "../views/helpers/writingPosts/allTopics/react/hooks";
+import Props from "../views/helpers/writingPosts/allTopics/react/props";
 
 const Navbar = (props) => {
   const userIsLogged = localStorage.getItem("token");
@@ -66,6 +67,9 @@ const Navbar = (props) => {
         </Route>
         <Route path="/extends/blog/react-hooks">
           <HooksGuide />
+        </Route>
+        <Route path="/extends/blog/react-props">
+          <Props />
         </Route>
         {/* end static routes!  */}
         <Route path="*">
