@@ -34,7 +34,7 @@ const Post = () => {
 
   const fullPostContent = post.title + post.content;
   const stats = readingTime(fullPostContent);
-  if (!post) return "Cargando contenido";
+  if (!post) return "Cargando contenido...";
 
   return (
     <section className="main-blog-content">
@@ -47,7 +47,7 @@ const Post = () => {
                   { post.codeExplanation ? <pre> <code> {post.codeExplanation} </code> </pre> : null }
                    <br />
                   { post.urlExternal ? <b> Quieres aprender mas? </b> : null }
-                  { post.urlExternal ? <a href={post.urlExternal} target="_blank" title="learning" rel="noopener noreferrer"   >{post.urlExternal} </a>  : null }
+                  { post.urlExternal && post.urlExternal.startsWith("https") ? <a href={post.urlExternal} target="_blank" title="learning" rel="noopener noreferrer"   >{post.urlExternal} </a>  : <a href={post.urlExternal} title="learning" rel="noopener noreferrer">{post.urlExternal} </a> }
 
                 </div>
               </div>
