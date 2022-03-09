@@ -14,8 +14,6 @@ export default class Login extends React.Component {
     };
   }
 
-
-
   componentDidMount() {
     document.title = "Login";
   }
