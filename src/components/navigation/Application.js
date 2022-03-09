@@ -1,5 +1,5 @@
 import React from "react";
-import Home from "../../components/views/home";
+import Home from "../views/home";
 import Aboutme from "../views/aboutme";
 import Portfolio from "../views/portfolio/portfolio";
 import Signup from "../views/users/register";
@@ -23,7 +23,7 @@ import Estado from "../views/helpers/writingPosts/allTopics/react/estado";
 import HooksGuide from "../views/helpers/writingPosts/allTopics/react/hooks";
 import Props from "../views/helpers/writingPosts/allTopics/react/props";
 
-const Navbar = (props) => {
+const Application = (props) => {
   const userIsLogged = localStorage.getItem("token");
 
   return (
@@ -81,4 +81,4 @@ const Navbar = (props) => {
   );
 };
 
-export default Navbar;
+export default Application;
