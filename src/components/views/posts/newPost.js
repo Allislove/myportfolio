@@ -13,12 +13,12 @@ const NewPost = (props) => {
   const [tags, setTags] = useState("");
 
   const user = localStorage.getItem('token');
-  console.log(user)
+  // console.log(user)
   const handleSubmit = async (e) => {
 
     const post = '/posts'
     const token = localStorage.getItem("token");
-    console.log(token);
+    // console.log(token);
     e.preventDefault();
     const data = {
       token: '',
@@ -44,7 +44,7 @@ const NewPost = (props) => {
       )
       .then((res) => {
         const data = res.data;
-        console.log(data)
+        // console.log(data)
         //console.log(data.message);
         if (data.message === "post creado de manera exitosa") {
           alert("Post creado con exito");
