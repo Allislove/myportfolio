@@ -1,5 +1,7 @@
 import React from "react";
 import "./style.css";
+import LatestPosts from "../../../latestposts";
+
 const readingTime = require("reading-time");
 
 const Props = () => {
@@ -97,6 +99,10 @@ const Props = () => {
         los usuarios dependiendo, si este esta o no registrado y logeado en el
         sistema.
       </p>
+      <b> Aprender más.</b>
+      <section className="intro-latest-posts">
+        <LatestPosts isHome={false} />
+      </section>
     </div>
   );
 };

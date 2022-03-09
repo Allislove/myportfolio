@@ -20,7 +20,7 @@ export default function Intro() {
 
       <h1>Latest Posts</h1>
       <section className="intro-latest-posts">
-        <LatestPosts />
+        <LatestPosts isHome={true} />
       </section>
     </div>
   );

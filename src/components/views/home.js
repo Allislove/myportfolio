@@ -11,13 +11,9 @@ function Home() {
     return(
         <div className="main container">
             <Intro />
-
         </div>
     )
 
 }
-
-
-
 
 export default Home;

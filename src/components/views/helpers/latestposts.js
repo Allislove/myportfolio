@@ -3,7 +3,7 @@ import axios from "axios";
 import '../../style/latestspots.css';
 import { Link } from "react-router-dom";
 
-const LatestPosts = () => {
+const LatestPosts = (props) => {
   const [posts, setPosts] = React.useState([]);
 
   React.useEffect(() => {
@@ -50,8 +50,38 @@ const LatestPosts = () => {
     }
   }
 
+  function randomPosts () {
+    for (let i = 0; i < posts.length; i++) {
+      //console.log(posts[i].title);
+      const random = posts.slice(0, 3);
+      //console.log(random);
+      return (
+          <div className="s-twoposts">
+            {random.map((post) => {
+              if (post.content.length > 50) {
+                post.content = post.content.substring(0, 100) + "...";
+              }
+              return (
+                <Link
+                  className="anclas"
+                  to={`/blog/${post._id}`}
+                  key={post._id}
+                >
+                  <div className="bcontent" key={post._id}>
+                    <h3>{post.title}</h3>
+                    <p>{post.content}</p>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+      );
+    }
+  }
+
+
   return <div className="next-latest">
-          {twoPosts()}
+          {props.isHome ? twoPosts() : randomPosts()}
         </div>;
 };
 
