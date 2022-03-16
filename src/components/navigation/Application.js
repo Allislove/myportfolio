@@ -22,6 +22,7 @@ import Error from "../views/helpers/error404";
 import Estado from "../views/helpers/writingPosts/allTopics/react/estado";
 import HooksGuide from "../views/helpers/writingPosts/allTopics/react/hooks";
 import Props from "../views/helpers/writingPosts/allTopics/react/props";
+import Versus from "../views/helpers/writingPosts/allTopics/tutorials/backorfront";
 
 const Application = (props) => {
   const userIsLogged = localStorage.getItem("token");
@@ -71,6 +72,10 @@ const Application = (props) => {
         <Route path="/extends/blog/react-props">
           <Props />
         </Route>
+        <Route path="/extends/blog/backend-or-frontend">
+          <Versus />
+        </Route>
+        
         {/* end static routes!  */}
         <Route path="*">
           <Error />
