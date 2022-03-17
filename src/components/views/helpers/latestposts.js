@@ -34,7 +34,7 @@ const LatestPosts = (props) => {
               }
               return (
                 <Link
-                  className="anclas"
+                  className="blogpostcards blogcontent"
                   to={`/blog/${post._id}`}
                   key={post._id}
                 >
@@ -63,7 +63,7 @@ const LatestPosts = (props) => {
               }
               return (
                 <Link
-                  className="anclas"
+                  className="blogpostcards blogcontent"
                   to={`/blog/${post._id}`}
                   key={post._id}
                 >
