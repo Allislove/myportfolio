@@ -10,10 +10,11 @@ export default function Aboutme() {
     <div className="main container">
       <div className="container blogcontent">
         <p className="aboutme">
-          Soy Ingeniero de sistemas ( <b>en progreso</b> ), actualmente con
-          titulo como Tecnologo en Desarrollo de Software, ahora estoy enfocado
-          en desarrollo web, tengo 24 años y experiencia de 1 año como
-          desarrollador de software, principalmente en Backend. Cuento con
+          Soy Ingeniero de Software ( <b>en progreso</b> ), actualmente con
+          titulo como Tecnologo en Desarrollo de Software, además completando la
+          carrera, Dios mediante para 2024 graduado como Ing de Software ahora
+          estoy enfocado en desarrollo web, cuento con experiencia de 1 año
+          como desarrollador de software, principalmente en Backend. Cuento con
           conocimientos respaldados por experiencia laboral en lenguajes de
           programación como <b>JavaScript</b>, <b>Java</b>, <b>Python</b> y
           <b>Php</b> donde he tenido la oportunidad de utilizar frameworks y
