@@ -41,8 +41,17 @@ export default class Register extends React.Component {
         }
       )
       .then((res) => {
-        // console.log(res);
-        // console.log(res.data);
+        const data = res.data;
+        if (data.token) {
+          // console.log("Usuario registrado y logeado!");
+          // console.log(data.token);
+           localStorage.setItem("token", data.token);
+           this.setState({ isAuthenticated: true });
+ 
+           console.log(this.state.isAuthenticated);
+           // this.notifySucces();
+           return window.location.href = '/';
+         }
       })
       .catch((error) => {
         return new Error(error);
