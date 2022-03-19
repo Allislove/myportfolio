@@ -1,5 +1,4 @@
 import React from "react";
-import Profileimage from "./images/profile.jpeg";
 import LatestPosts from "./latestposts";
 import { Subscribers } from "./subscribe";
 
