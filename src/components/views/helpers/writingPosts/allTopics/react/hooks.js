@@ -4,7 +4,7 @@ const HooksGuide = () => {
     const title = "HOOKS en React/"
 
     return(
-        <div>
+        <div className="main-blog-content">
             <h1> {title} </h1>
 
             Guia completa de hooks

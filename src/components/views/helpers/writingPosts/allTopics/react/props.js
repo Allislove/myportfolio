@@ -11,9 +11,31 @@ const Props = () => {
   const stats = readingTime(content);
 
   return (
-    <div className="main-blog-content">
+    <div className="main">
       <h1> {title} </h1>
       <p className="reading-time"> {stats.text}</p>
+
+      <p>
+        Vamos a leer y a comprender el Component View.jsx. Este componente
+        contiene la data de los Usuarios, (Data que hemos creado aqui mismo!)
+        pero esta data, va a ser representada y manipulada directamente desde el
+        componente de users.jsx, con esto logramos encapsular nuestro código y
+        asi tener un mayor control sobre el mismo. Luego tenemos el Component
+        Users.jsx Recibimos las propiedades que le pasamos desde el componente
+        view, y ahora trabajamos con ellas, logrando asi que nuestro componente
+        de users.jsx, pueda manipular la data <code> (users="allUsers" ) </code> que nosotros le
+        pasamos desde el componente view. Descomenta si deseas ver que contiene
+        users, antes de ser mostrado en el navegador! <code> console.log(users); </code>  Con
+        el map recorremos el array.
+      </p>
+
+      <pre>
+        <code>testttt return( ) import React from 'react'</code>
+        <code>
+          
+        </code>
+      </pre>
+
       <p className="">
         <b>¡Vaya hay interés eso es genial </b> :) ! Veamos entonces, si eres un
         programador con más de un año de experiencia, podria ser que te has
@@ -49,12 +71,12 @@ const Props = () => {
       </p>
       <p>
         Por ende, deducimos entonces, que ya existe un componente con nombre
-        Book.js (Que sera el componente hijo), y tambien que hay un
-        componente Products(Products.js), que es el que engloba, cada uno de
-        los productos(Book.js), el componente hijo tiene una propiedad
-        llamada descuento, que sea donde aplicaremos el porcentaje a descontar
-        de cada articulo, sabemos que en este caso son libros, puede ser
-        cualquier otro producto,{" "}
+        Book.js (Que sera el componente hijo), y tambien que hay un componente
+        Products(Products.js), que es el que engloba, cada uno de los
+        productos(Book.js), el componente hijo tiene una propiedad llamada
+        descuento, que sea donde aplicaremos el porcentaje a descontar de cada
+        articulo, sabemos que en este caso son libros, puede ser cualquier otro
+        producto,{" "}
         <b>
           ¿Que hacemos ahora para que todo esto se cumpla y además muestre
           entonces el precio acorde para cada usuario que visite nuestro Sitio
@@ -91,13 +113,13 @@ const Props = () => {
       </p>
       <p>
         Y en esta ultima imagen lo que sucede es, que recibe a el componente
-        Hijo(Book.js), y le pasamos una prop(Propiedad) a dicho componente, con un
-        valor de tipo booleano, con un estado falso, que es lo que hara posible 
-        el uso de el componente hijo, en otro lugar si asi lo deseamos, y mostrar 
-        un dato diferente en cada lugar en donde lo utilicemos. Teniendo esto en cuenta,
-        imagina la respuesta! La has adiviniado!! Asi es!, va a mostrar el precio a cada uno de
-        los usuarios dependiendo, si este esta o no registrado y logeado en el
-        sistema.
+        Hijo(Book.js), y le pasamos una prop(Propiedad) a dicho componente, con
+        un valor de tipo booleano, con un estado falso, que es lo que hara
+        posible el uso de el componente hijo, en otro lugar si asi lo deseamos,
+        y mostrar un dato diferente en cada lugar en donde lo utilicemos.
+        Teniendo esto en cuenta, imagina la respuesta! La has adiviniado!! Asi
+        es!, va a mostrar el precio a cada uno de los usuarios dependiendo, si
+        este esta o no registrado y logeado en el sistema.
       </p>
       <b> Aprender más.</b>
       <section className="intro-latest-posts">

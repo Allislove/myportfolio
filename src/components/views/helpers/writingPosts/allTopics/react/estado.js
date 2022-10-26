@@ -6,7 +6,7 @@ const reactState = () => {
 
 
     return (
-        <div>
+        <div className="main-blog-content">
             <h1> {title} </h1>
             "Esta es una guia completa de react, continuacion de el vocado que te he dado anteriormente
             en el enlace anterior."
