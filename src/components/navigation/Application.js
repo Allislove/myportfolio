@@ -1,7 +1,7 @@
 import React from "react";
 import Home from "../views/home";
 import Aboutme from "../views/aboutme";
-import Portfolio from "../views/portfolio/portfolio";
+// import Portfolio from "../views/portfolio/portfolio";
 import Signup from "../views/users/register";
 import Signin from "../views/users/login";
 import "../style/navbar.css";
@@ -41,9 +41,9 @@ const Application = (props) => {
         <Route exact path="/blog">
           <Posts />
         </Route>
-        <Route exact path="/portfolio">
+{/*         <Route exact path="/portfolio">
           <Portfolio />
-        </Route>
+        </Route> */}
         <Route exact path="/aboutme">
           <Aboutme />
         </Route>

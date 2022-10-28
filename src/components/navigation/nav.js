@@ -21,7 +21,7 @@ const Nav = () => {
             Blog
           </Link>
         </li>
-        <li className="">
+        <li className="" style={{visibility: "hidden"}}>
           <Link to="/portfolio">Portfolio</Link>
         </li>
         <li className="">

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "../../style/home.css";
 import "../../style/posts.css";
 // import api from "../../../axios.config";
@@ -64,88 +64,92 @@ function Posts() {
         <h3>Últimos temas</h3>
         <p> The past, PRESENT And future</p>
         <a
-          class="blog-posts"
+          className="blog-posts"
           href="/blg/react-props"
         >
           <div>
             <h2>Props (Propiedades en React)</h2>
-            <div class="meta">
-              <time datetime="2021-11-23T23:14:00Z">23/Nov-2021</time>
+            <div className="meta">
+              <time dateTime="2021-11-23T23:14:00Z">23/Nov-2021</time>
             </div>
           </div>
         </a>
         
         <a
-          class="blog-posts"
+          className="blog-posts bst"
           href="/blg/estado-avanzado-react"
         >
           <div>
-            <h2>Estado en React</h2>
-            <div class="meta">
-              <time datetime="2021-11-18T01:53:00Z">18/Nov-2021</time>
+            <h2>Estado en React sssss</h2>
+            <div className="meta">
+              <time dateTime="2021-11-18T01:53:00Z">18/Nov-2021</time>
             </div>
           </div>
         </a>
 
         <a
-          class="blog-posts"
+          className="blog-posts"
           href="/blg/for+in+en+js"
         >
           <div>
             <h2>forIn - JavaScript</h2>
-            <div class="meta">
-              <time datetime="2021-09-28T02:23">28/Sep-2021</time>
+            <div className="meta">
+              <time dateTime="2021-09-28T02:23">28/Sep-2021</time>
             </div>
           </div>
         </a>
 
         <a
-          class="blog-posts"
+          className="blog-posts"
           href="/blg/funciones+en+js"
         >
           <div>
             <h2>Funciones en JavaScript</h2>
-            <div class="meta">
-              <time datetime="2021-09-28T02:19">28/Sep-2021</time>
+            <div className="meta">
+              <time dateTime="2021-09-28T02:19">28/Sep-2021</time>
             </div>
           </div>
         </a>
 
         <a
-          class="blog-posts"
+          className="blog-posts"
           href="/blg/objectos+en+js"
         >
           <div>
             <h2>Objetos en JS</h2>
-            <div class="meta">
-              <time datetime="2021-09-28T02:17">28/Sep-2021</time>
+            <div className="meta">
+              <time dateTime="2021-09-28T02:17">28/Sep-2021</time>
             </div>
           </div>
         </a>
 
         <a
-          class="blog-posts"
+          className="blog-posts"
           href="/blg/arreglos+en+js"
         >
           <div>
             <h2>Arreglos en JS</h2>
-            <div class="meta">
-              <time datetime="2021-09-14T22:23:00Z">14/Sep-2021</time>
+            <div className="meta">
+              <time dateTime="2021-09-14T22:23:00Z">14/Sep-2021</time>
             </div>
           </div>
         </a>
 
+
+        <div className="bst">
         <a
           class="blog-posts"
           href="/blg/json+tutorial"
         >
           <div>
             <h2>JSON - JavaScript Object Notation</h2>
-            <div class="meta">
-              <time datetime="2021-09-14T22:22">14/Sep-2021</time>
+            <div className="meta">
+              <time dateTime="2021-09-14T22:22">14/Sep-2021</time>
             </div>
           </div>
         </a>
+        </div>
+
       </main>
     </div>
   );

@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import Markdown from "markdown-to-jsx";
 import "./style.css";
 import LatestPosts from "../../../latestposts";
 
@@ -7,8 +8,17 @@ const readingTime = require("reading-time");
 const Props = () => {
   const title = "Props - Guia completa!";
   const content = "Aqui es cuando entran los Props.";
-
+  const [postContent, setPostcontent] = useState("");
   const stats = readingTime(content);
+
+  useEffect(() => {
+    import("./props.md").then((res) =>
+      fetch(res.default)
+        .then((response) => response.text())
+        .then((response) => setPostcontent(response))
+        .catch((err) => console.log(err))
+    );
+  }, []);
 
   return (
     <div className="main">
@@ -23,18 +33,13 @@ const Props = () => {
         asi tener un mayor control sobre el mismo. Luego tenemos el Component
         Users.jsx Recibimos las propiedades que le pasamos desde el componente
         view, y ahora trabajamos con ellas, logrando asi que nuestro componente
-        de users.jsx, pueda manipular la data <code> (users="allUsers" ) </code> que nosotros le
-        pasamos desde el componente view. Descomenta si deseas ver que contiene
-        users, antes de ser mostrado en el navegador! <code> console.log(users); </code>  Con
-        el map recorremos el array.
+        de users.jsx, pueda manipular la data <code> (users="allUsers" ) </code>{" "}
+        que nosotros le pasamos desde el componente view. Descomenta si deseas
+        ver que contiene users, antes de ser mostrado en el navegador!{" "}
+        <code> console.log(users); </code> Con el map recorremos el array.
       </p>
 
-      <pre>
-        <code>testttt return( ) import React from 'react'</code>
-        <code>
-          
-        </code>
-      </pre>
+      <Markdown>{postContent}</Markdown>
 
       <p className="">
         <b>¡Vaya hay interés eso es genial </b> :) ! Veamos entonces, si eres un

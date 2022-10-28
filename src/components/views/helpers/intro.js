@@ -1,6 +1,6 @@
 import React from "react";
 import LatestPosts from "./latestposts";
-import { Subscribers } from "./subscribe";
+// import { Subscribers } from "./subscribe";
 
 export default function Intro() {
   return (
@@ -13,9 +13,9 @@ export default function Intro() {
       <section className="intro-latest-posts">
         <LatestPosts isHome={true} />
       </section>
-      <div className="subscribers-container">
+{/*       <div className="subscribers-container">
         <Subscribers />
-      </div>
+      </div> */ }
     </>
   );
 }

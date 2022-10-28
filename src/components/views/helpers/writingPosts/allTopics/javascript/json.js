@@ -1,15 +1,37 @@
-import React from 'react';
+import React, { useEffect, useState } from "react";
+import Markdown from "markdown-to-jsx";
 
 const JsonGuide = () => {
-    const title = "JSON - JeyyyyyySonnnnn /"
+  const title = "JSON en JavaScript /";
 
-    return(
-        <div className="main-blog-content">
-            <h1> {title} </h1>
+  const [postContent, setPostcontent] = useState("");
 
-            Guia completa de JSON
-        </div>
+  useEffect(() => {
+    import("./json.md").then((res) =>
+      fetch(res.default)
+        .then((response) => response.text())
+        .then((response) => setPostcontent(response))
+        .catch((err) => console.log(err))
     );
-}
+  }, []);
+  return (
+    <div className="main">
+      <h1> {title} </h1>
+
+        <Markdown>{postContent}</Markdown>
+
+      <p>
+        {" "}
+        Quieres aprender mas?{" "}
+        <b>
+          {" "}
+          <a href="https://www.json.org/" target="blank">
+            Aprender más de Json
+          </a>{" "}
+        </b>
+      </p>
+    </div>
+  );
+};
 
 export default JsonGuide;

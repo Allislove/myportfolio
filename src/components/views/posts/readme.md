@@ -13,7 +13,7 @@ Example
 * Array (Arreglo) - Introducción
 * JSON - JavaScript Object Notation
 
--- ¿Que contendra la visualización de los posts?
+-- ¿Que contendra la visualización de cada post?
     **** Titulo del posts 
     **** minutos aprox de lectura (readingtime sera importado en cada tema)
     **** Primeramente una descripción de como funciona dicho tema Ejem( Estado en React)
@@ -28,3 +28,10 @@ Example
     - Props.js
     - Funciones.js  .... etc.
 De tal forma sera su funcionamiento.
+
+
+--- El archivo post.js ha sido ahora eliminado.
+    **** Dicho archivo, representaba cada tema de manera individual,
+    pero esto ahora es representado de igual forma, pero en componentes separados
+    y sin consumo de una api, por ende, el archivo Posts.js, contiene enlaces
+    a cada uno de los temas en especifico.
