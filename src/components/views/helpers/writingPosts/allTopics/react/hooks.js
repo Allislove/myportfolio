@@ -1,15 +1,26 @@
-import React from 'react';
+import React, { useEffect, useState } from "react";
+import Markdown from "markdown-to-jsx";
 
 const HooksGuide = () => {
-    const title = "HOOKS en React/"
+  const title = "HOOKS en React/";
+  const [postContent, setPostcontent] = useState("");
 
-    return(
-        <div>
-            <h1> {title} </h1>
-
-            Guia completa de hooks
-        </div>
+  useEffect(() => {
+    import("./hooks.md").then((res) =>
+      fetch(res.default)
+        .then((response) => response.text())
+        .then((response) => setPostcontent(response))
+        .catch((err) => console.log(err))
     );
-}
+  }, []);
+
+  return (
+    <div className="main-blog-content">
+      <h1> {title} </h1>
+
+      <Markdown>{postContent}</Markdown>
+    </div>
+  );
+};
 
 export default HooksGuide;

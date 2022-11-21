@@ -11,20 +11,21 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    overflow: hidden;
   
   }
-.anclas {
-    flex-wrap: wrap;
-    margin: 4px;
-    padding: 4px;
-}
 
 .anclas:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-    transition: all 0.3s ease-in-out;
-    margin: 0 auto;
-    transform: transparent;
+    color: black;
+    transform: scale(1.0790);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    backdrop-filter: blur(20px);
+    z-index: 4;
+    overflow: hidden;
+    display: block;
 }
 
 .ITSME {

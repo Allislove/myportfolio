@@ -16,7 +16,7 @@ const Mobilemenu = () => {
           <li>
             <a href="/blog">Blog</a>
           </li>
-          <li>
+          <li style={{visibility: "hidden"}}>
             <a href="/portfolio">Portfolio</a>
           </li>
           <li>

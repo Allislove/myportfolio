@@ -1,0 +1,27 @@
+.code {
+    position: relative;
+  }
+  
+  .code pre {
+    padding-top: 2rem !important;
+    transition: .3s ease all;
+  }
+  
+  .code__icons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  .code__icons button {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .article-wrapper {
+    padding: 2rem;
+    box-shadow: 0 1px 1px rgba(172, 16, 16, 0.3);
+  }

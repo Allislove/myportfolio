@@ -21,13 +21,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 17px;
-  line-height: 1.4705882353;
+  line-height: 1.5405882353;
   background-color: #fff;
-  color: #1d1d1f;
   font-style: normal;
   letter-spacing: -0.022em;
   font-weight: 500;
   font-variant-ligatures: normal;
+  color: #333;
+  margin-bottom: 32px;
+  word-break: break-word;
 }
 
 .ioform {
@@ -98,9 +100,9 @@ img {
   background-size: cover;
 }
 
-a:hover {
+a, a:hover {
   text-decoration: none;
-  color: rgba(15, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.715);
 }
 
 pre {
@@ -324,4 +326,9 @@ input[type="checkbox"]{
   text-align: left;
   text-transform: none;
 
+}
+
+
+.bst {
+  border-color: 1px rgba(183, 7, 7, 0.521);
 }

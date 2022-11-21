@@ -14,7 +14,7 @@ export default function Footer() {
           rel="noopener noreferrer"
         >
           <span style={{ color: "black" }}>
-            <i class="fab fa-github fa-2x"></i>
+            <i className="fab fa-github fa-2x"></i>
           </span>
         </a>
 
@@ -25,7 +25,7 @@ export default function Footer() {
           rel="noopener noreferrer"
         >
           <span style={{ color: "black" }}>
-            <i class="fab fa-twitter fa-2x"></i>
+            <i className="fab fa-twitter fa-2x"></i>
           </span>
         </a>
 
@@ -36,7 +36,7 @@ export default function Footer() {
           rel="noopener noreferrer"
         >
           <span style={{ color: "black" }}>
-            <i class="fab fa-instagram fa-2x"></i>
+            <i className="fab fa-instagram fa-2x"></i>
           </span>
         </a>
 
@@ -47,7 +47,7 @@ export default function Footer() {
           rel="noopener noreferrer"
         >
           <span style={{ color: "black" }}>
-            <i class="fab fa-linkedin fa-2x"></i>
+            <i className="fab fa-linkedin fa-2x"></i>
           </span>
         </a>
       </div>
@@ -62,7 +62,7 @@ export default function Footer() {
           <a
             href="//github.com/allislove"
             target="_blank"
-            title="GitHub URL"
+            className="GitHub URL"
             rel="noopener noreferrer"
           >
             Andrés Romaña

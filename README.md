@@ -1,10 +1,10 @@
-# Proyecto Realizado con React App
+# Proyecto Realizado con React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Portafolio Personal
+## Sitio Web Personal
 
-Andrés Felipe Romaña Romaña
+- **# Software Engineering Student**
+- **Name:** Andrés Felipe Romaña Romaña
 
 ### `Pais`
 
@@ -15,3 +15,6 @@ Colombia
    - this is a new version of the project
    - Version 3.0.1
    - Added React Router v4
+
+ God is good all the time.
+ 

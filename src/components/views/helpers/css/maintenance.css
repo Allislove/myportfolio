@@ -1,0 +1,26 @@
+body {
+    background-color: black;
+    display: block;
+    font-size: 24px;
+}
+
+.maintenance {
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    text-align: center;
+    color: white;
+}
+
+p {
+    background-color: rgb(44, 118, 247);
+}
+
+.ar {
+    color: coral;
+    font-size: 30px;
+}
+
+a {
+    color: chartreuse;
+}
