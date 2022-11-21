@@ -4,12 +4,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
 import Blacklm from './components/views/helpers/blacklm';
+import { Maintenance } from './components/views/helpers/Maintenance';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Blacklm />
-    <App />
+{/*     <Blacklm />
+    <App /> */}
+    <Maintenance />
   </React.StrictMode>,
   document.getElementById('root')
 );
