@@ -17,7 +17,7 @@ function classNames(...classes) {
 
 export default function UserIsNotLogged() {
   return (
-    <Disclosure as="nav" className="w-full sm:flex items-center justify-center bg-[black]">
+    <Disclosure as="nav" className="sm:w-full sm:flex sm:items-center sm:justify-center sm:bg-[black] w-full sm:flex items-center justify-center bg-[black]">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
