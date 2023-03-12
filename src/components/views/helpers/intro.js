@@ -14,8 +14,8 @@ export default function Intro() {
           w-180 sm:shadow-2xl bg-gray-100">
             <div className="sm:p-2 sm:m-2 sm:mb-4 sm:border-2 sm:shadow-inner 
             sm:hover:bg-[#f0f5fa] sm:ease-out sm:duration-300 sm:rounded 
-            sm:transition sm:delay-150 sm:hover:ease-in sm:ease-in
-            hover:bg-[#f0f5fa]ease-out">
+            sm:hover:ease-in hover:bg-[#f0f5fa]ease-out duration-300 
+            p-2 mb-4 shadow-inner rounded hover:ease-in">
               <h2 class="card-title">Título del post 1</h2>
               <p class="card-preview">Este es un preview del contenido del post.</p>
               <div class="card-footer">
@@ -24,8 +24,9 @@ export default function Intro() {
               </div>
             </div>
             <div className="sm:p-2 sm:m-2 sm:mb-4 sm:border-2 sm:shadow-inner 
-            sm:hover:bg-[#f0f5fa] sm:ease-out sm:duration-300 sm:rounded hover:ease-in
-            hover:bg-[#f0f5fa]ease-out duration-300">
+            sm:hover:bg-[#f0f5fa] sm:ease-out sm:duration-300 sm:rounded 
+            sm:hover:ease-in hover:bg-[#f0f5fa]ease-out duration-300 
+            p-2 mb-2 shadow-inner rounded hover:ease-in">
               <h2 class="card-title">Título del post 2</h2>
               <p class="card-preview">
                 Este es un preview del contenido del post. 
@@ -41,8 +42,9 @@ export default function Intro() {
               </div>
             </div>
             <div className="sm:p-2 sm:m-2 sm:mb-4 sm:border-2 sm:shadow-inner 
-            sm:hover:bg-[#f0f5fa] sm:ease-out sm:duration-300 sm:rounded hover:ease-in
-            hover:bg-[#f0f5fa]ease-out duration-300">
+            sm:hover:bg-[#f0f5fa] sm:ease-out sm:duration-300 sm:rounded 
+            sm:hover:ease-in hover:bg-[#f0f5fa]ease-out duration-300 
+            p-2 mb-2 shadow-inner rounded hover:ease-in">
               <h2 class="card-title">Título del post 3</h2>
               <p class="card-preview">Este es un preview del contenido del post.</p>
               <div class="card-footer">
