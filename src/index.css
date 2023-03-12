@@ -5,3 +5,24 @@
 /* .text-amber-300 {
   background: red;
 } */
+
+.ioform {
+  margin: 20 auto;
+  padding: 40px;
+}
+
+form {
+  margin: 20px auto;
+  margin-top: 20px;
+  padding: 40px;
+  border: 1px solid;
+  box-shadow: 0px 0px 5px #ccc;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+.notAnclas,
+a {
+  list-style-type: none;
+  text-decoration: none;
+}
