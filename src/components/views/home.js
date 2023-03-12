@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
-import '../style/home.css'
+//import '../style/home.css'
 import Intro from './helpers/intro';
+import Tags from './helpers/tags';
 
 function Home() {
 
@@ -9,7 +10,8 @@ function Home() {
       });
 
     return(
-        <div className="main container">
+        <div className="">
+            <Tags />
             <Intro />
         </div>
     )

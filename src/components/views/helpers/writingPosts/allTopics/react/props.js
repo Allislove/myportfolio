@@ -3,13 +3,15 @@ import Markdown from "markdown-to-jsx";
 import "./style.css";
 import LatestPosts from "../../../latestposts";
 
-const readingTime = require("reading-time");
+//const readingTime = require("reading-time");
 
 const Props = () => {
   const title = "Props - Guia completa!";
   const content = "Aqui es cuando entran los Props.";
   const [postContent, setPostcontent] = useState("");
-  const stats = readingTime(content);
+  //const stats = readingTime(content);
+  const stats = content;
+
 
   useEffect(() => {
     import("./props.md").then((res) =>

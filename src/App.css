@@ -12,3 +12,9 @@ html {
 div {
     display: block;
 }
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -68,7 +68,7 @@ export default class Register extends React.Component {
               Please sign up
             </h3>
               <input
-                className="form-control mb-2 mr-sm-2"
+                className="form-input border-2 rounded-md block w-full px-3 py-2 mb-3 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"
                 type="text"
                 name="name"
                 value={name}
@@ -80,7 +80,7 @@ export default class Register extends React.Component {
             </div>
             <div className="form-group">
               <input
-                className="form-control mb-2 mr-sm-2"
+                className="form-input border-2 rounded-md block w-full px-3 py-2 mb-3 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"
                 type="text"
                 name="nickname"
                 value={nickname}
@@ -91,7 +91,7 @@ export default class Register extends React.Component {
             </div>
             <div className="mb-3">
               <input
-                className="form-control mb-2 mr-sm-2"
+                className="form-input border-2 rounded-md block w-full px-3 py-2 mb-3 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"
                 type="email"
                 name="email"
                 value={email}
@@ -102,7 +102,7 @@ export default class Register extends React.Component {
             </div>
             <div className="mb-3">
               <input
-                className="form-control mb-2 mr-sm-2"
+                className="form-input border-2 rounded-md block w-full px-3 py-2 mb-3 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"
                 type="password"
                 name="password"
                 value={password}
@@ -112,13 +112,15 @@ export default class Register extends React.Component {
               />
             </div>
             <div className="mb-3">
-              <button className="button form-control mb-2 mr-sm-2 btn btn-primary btn-dark" type="submit">
+              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded
+            rounded-md sm:btn sm:btn-primary sm:btn-dark sm:form-control 
+            sm:mb-2 sm:mr-sm-2 sm:rounded-md" type="submit">
                 Sign up
               </button>
               
-              <p>
+              <p className="text-sm mt-4">
                 Did you have an account yet? <br />
-                <a href="/signin">Sign in</a>
+                <a className="text-blue-500 hover:text-blue-700" href="/signin">Sign in</a>
               </p>
             </div>
           </form>

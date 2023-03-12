@@ -80,7 +80,7 @@ function Posts() {
           href="/blg/estado-avanzado-react"
         >
           <div>
-            <h2>Estado en React sssss</h2>
+            <h2>Estado en React</h2>
             <div className="meta">
               <time dateTime="2021-11-18T01:53:00Z">18/Nov-2021</time>
             </div>

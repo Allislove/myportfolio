@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "../style/aboutme.css";
+//import "../style/aboutme.css";
 
 export default function Aboutme() {
   useEffect(() => {
