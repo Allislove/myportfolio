@@ -2,7 +2,7 @@ import React from "react";
 
 const Mobilemenu = () => {
   return (
-    <div className="only__mobile">
+    <div className="p-4 only__mobile">
       <input type="checkbox" id="active" />
       <label htmlFor="active" className="menu-btn">
         <span></span>

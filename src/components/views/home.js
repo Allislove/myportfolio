@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import '../style/home.css'
+//import '../style/home.css'
 import Intro from './helpers/intro';
 
 function Home() {
@@ -9,7 +9,7 @@ function Home() {
       });
 
     return(
-        <div className="main container">
+        <div className="">
             <Intro />
         </div>
     )

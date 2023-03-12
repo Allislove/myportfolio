@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
+
 const UserIsNotLogged = () => {
   return (
-    <nav className="navbar" id="menu__mobile">
+    <nav className="flex " id="">
       <ul className="">
         <li className="">
-          <Link to="/">Home</Link>
+          <Link to="/">Homex</Link>
         </li>
         <li className="">
           <Link className="a" to="/blog">

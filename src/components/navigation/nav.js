@@ -11,12 +11,12 @@ const Nav = () => {
   // console.log(user);
 
   return (
-    <nav className="navbar">
+    <nav className="flex">
       <ul className="">
         <li className="">
           <Link to="/">Home</Link>
         </li>
-        <li className="">
+        <li className="text-yellow-400">
           <Link to="/blog">
             Blog
           </Link>

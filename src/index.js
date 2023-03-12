@@ -3,15 +3,16 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
-import Blacklm from './components/views/helpers/blacklm';
-import { Maintenance } from './components/views/helpers/Maintenance';
+import 'tailwindcss/tailwind.css'
+
+
+// import Blacklm from './components/views/helpers/blacklm';
 
 
 ReactDOM.render(
   <React.StrictMode>
-{/*     <Blacklm />
-    <App /> */}
-    <Maintenance />
+    {/* <Blacklm /> */}
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

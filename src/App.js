@@ -1,7 +1,7 @@
 import React from 'react';
 import Application from './components/navigation/Application';
-import Footer from './components/views/footer/footer';
-import './App.css';
+// import Footer from './components/views/footer/footer';
+//import './App.css';
 import Mobilemenu from './components/navigation/mobilemenu';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <div className="container-sm">
       <Mobilemenu />
       <Application />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
