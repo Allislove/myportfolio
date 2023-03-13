@@ -53,8 +53,15 @@ export default function Intro() {
               </div>
             </div>
           </div>
-          <div className="sm:bg-[white]  sm:flex-none sm:w-auto sm:h-auto">
-            Tell me about you!
+          <div className="sm:bg-[black]  sm:flex-none sm:w-auto sm:h-auto
+          bg-[black] flex-none w-auto h-auto">
+            <span>
+              <img style={{width: 140, height: 140}} src="https://img.icons8.com/officel/512/maintenance.png" alt="SITE IS UNDER MAINTENANCE"/>
+            </span>
+            <span className="sm:bg-[yellow]  sm:flex-none sm:w-auto sm:h-auto
+            bg-[yellow] flex-none w-auto h-auto"> 
+            SITE IS UNDER MAINTENANCE
+            </span>
           </div>
 
         </div>
