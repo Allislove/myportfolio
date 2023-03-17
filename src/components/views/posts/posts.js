@@ -61,7 +61,7 @@ function Posts() {
   return (
     <div className="main">
       <main >
-        <h3 className="text-xl fo nt-bold mb-2 px-4 pt-4 text-orange-500">Últimos temas</h3>
+        <h1 className="text-xl font-bold mb-2 px-4 pt-4 text-orange-500">Últimos temas</h1>
         <p> The past, PRESENT And future</p>
         <a
           className="blog-posts"
