@@ -1,13 +1,12 @@
 export default function Intro() {
   return (
     <>
-      <section className="sm:flex flex-col sm:container sm:mx-auto sm:justify-center sm:items-center sm:shadow-2xl sm:shadow-blue-100 shadow-2xl shadow-blue-100 align-center sm:align-center justify-center  items-center">
-        <div
-          className="h-full sm:flex sm:justify-center sm:align-center sm:items-center sm:space-x-4 sm:p-4
+      <section className="sm:flex-grow sm:flex flex-columns-1 sm:container sm:mx-auto sm:justify-center 
+      sm:align-center align-center sm:shadow-2xl sm:shadow-blue-100 shadow-2xl shadow-blue-100">
+        <div className="sm:flex justify-items-center sm:justify-center sm:align-center sm:items-center sm:space-x-4 sm:p-4
          justify-center items-center align-center space-x-4 p-4"
         >
-          <div
-            className="max-w-auto sm:w-128 sm:hover:border-black-200 w-180 sm:shadow-2xl bg-gray-100 sm:bg-gray-100 transition duration-300 overflow-auto"
+          <div className="max-w-auto sm:w-128 sm:hover:border-black-200 w-180 sm:shadow-2xl bg-gray-100 sm:bg-gray-100 transition duration-300 overflow-auto"
             style={{ minWidth: "300px", maxWidth: "800px", height: "100%" }}
           >
             <h1 className="text-xl font-bold mb-2 px-4 pt-4 text-orange-500">
@@ -71,9 +70,11 @@ export default function Intro() {
               </div>
             </a>
           </div>
-          <div
-            className="flex-none sm:h-auto p-4 mx-4 max-w-auto sm:w-128 sm:hover:border-black-200 w-180 sm:shadow-2xl bg-gray-100 sm:bg-gray-100 transition  duration-300 overflow-auto"
-            style={{ maxWidth: "280px", height: "inherit" }}
+
+        </div>
+        <div className="sm:col max-w-auto sm:w-128 sm:hover:border-black-200 w-180 sm:shadow-2xl bg-gray-100 sm:bg-gray-100
+         transition duration-300 overflow-auto sm:transition sm:duration-300 sm:overflow-auto"
+            style={{ maxWidth: "280px", minHeight: "100%", maxHeight: "280px" }}
           >
             <span>
               <img
@@ -86,11 +87,8 @@ export default function Intro() {
               className="sm:bg-[yellow]  sm:flex-none sm:w-auto sm:h-auto
             bg-[yellow] flex-none w-auto h-auto"
             >
-              SITE IS UNDER MAINTENANCE odemos entrar de una manera
-              excelenteEste es un preview del contenido del post. podemos entrar
-              de una manera excelenteEste es un preview del contenido del post.
+              SITE IS UNDER MAINTENANCE
             </span>
-          </div>
         </div>
       </section>
     </>
