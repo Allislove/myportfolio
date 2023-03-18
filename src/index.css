@@ -36,6 +36,12 @@ blockquote {
   font-style: italic;
 }
 
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
 h2 {
   font-size: 1.5rem;
   font-weight: bold;
@@ -87,7 +93,15 @@ ol li {
 }
 
 
+strong a {
+  color: #1215c1;
+}
 
+.learnMoreKeepGoing a {
+  color: #1215c1;
+  text-decoration: none;
+  margin: 0 10px;
+}
 
 /* .markdown-body {
   font-size: 16px;

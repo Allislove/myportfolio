@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-// import Markdown from "markdown-to-jsx";
+import ReactMarkdown from "react-markdown";
 
 const JsonGuide = () => {
-  const title = "JSON en JavaScript /";
+  // const title = "JSON en JavaScript /";
 
   const [postContent, setPostcontent] = useState("");
   console.log(postContent);
@@ -17,9 +17,9 @@ const JsonGuide = () => {
   }, []);
   return (
     <div className="main">
-      <h1> {title} </h1>
+      {/* <h1> {title} </h1> */}
 
-        {/* <Markdown>{postContent}</Markdown> */}
+        <ReactMarkdown>{postContent}</ReactMarkdown>
 
       <p>
         {" "}

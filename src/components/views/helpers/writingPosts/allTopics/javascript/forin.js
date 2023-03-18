@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-// import Markdown from "markdown-to-jsx";
+import ReactMarkdown from "react-markdown";
 
 const ForIn = () => {
-  const title = "uso del For In en JavaScript /";
+  // const title = "uso del For In en JavaScript ";
   const [postContent, setPostcontent] = useState("");
-  console.log(postContent);
+  // console.log(postContent);
 
   useEffect(() => {
     import("./forin.md").then((res) =>
@@ -17,18 +17,11 @@ const ForIn = () => {
 
   return (
     <div className="main">
-      <h1> {title} </h1>
-      <p>
-        Instrucción que utilizamos generalmente para iterar sobre Objetos de
-        javascript, lo que agiliza el prose a la hora de que queremos acceder a
-        determinadas claves y valores de estos mismos. Mira más abajo el
-        ejemplo, donde hemos creado un array llamado users, que contiene un tipo
-        de texto JSON, aqui podemos entonces ver como podriamos recorrer un tipo
-        de texto formateado.
-      </p>
-      {/* <Markdown>{postContent}</Markdown> */}
+      {/* <h1> {title} </h1> */}
+      
+      <ReactMarkdown>{postContent}</ReactMarkdown>
 
-      <p>
+      <p className="learnMoreKeepGoing">
         {" "}
         Quieres aprender mas?{" "}
         <b>
