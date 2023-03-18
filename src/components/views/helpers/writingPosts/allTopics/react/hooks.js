@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import Markdown from "markdown-to-jsx";
+// import Markdown from "markdown-to-jsx";
 
 const HooksGuide = () => {
   const title = "HOOKS en React/";
   const [postContent, setPostcontent] = useState("");
+  console.log(postContent);
 
   useEffect(() => {
     import("./hooks.md").then((res) =>
@@ -18,7 +19,7 @@ const HooksGuide = () => {
     <div className="main-blog-content">
       <h1> {title} </h1>
 
-      <Markdown>{postContent}</Markdown>
+      {/* <Markdown>{postContent}</Markdown> */}
     </div>
   );
 };
