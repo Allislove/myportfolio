@@ -26,3 +26,78 @@ a {
   list-style-type: none;
   text-decoration: none;
 }
+
+
+blockquote {
+  background-color: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+
+pre {
+  background: #282c34;
+  border-radius: 4px;
+  color: #fff;
+  margin: 0;
+  overflow: auto;
+  padding: 16px;
+}
+
+code, pre {
+  font-family: Consolas,Menlo,Monaco,source-code-pro,monospace;
+  hyphens: none;
+  line-height: 1.5;
+  overflow: auto;
+  tab-size: 2;
+  text-align: left;
+  white-space: pre;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+}
+
+ul {
+  list-style: disc; /* establece el estilo del marcador */
+  margin: 0; /* elimina el margen exterior predeterminado */
+  padding: 0; /* elimina el espacio interior predeterminado */
+}
+
+li {
+  margin-bottom: 10px; /* añade un espacio entre los elementos de lista */
+}
+
+ol {
+  list-style-type: circle; /* Cambia el estilo del número */
+  margin: 1em 0; /* Margen arriba y abajo */
+  padding: 0 0 0 2em; /* Espaciado del contenido */
+
+}
+
+ol li {
+  margin: 0.5em 0; /* Espaciado entre elementos */
+}
+
+
+
+
+/* .markdown-body {
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 20px;
+  color: #333;
+  background-color: #f5f5f5;
+} */
+
+
+
+

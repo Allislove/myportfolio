@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import Markdown from "markdown-to-jsx";
+// import Markdown from "markdown-to-jsx";
 
 const ForIn = () => {
   const title = "uso del For In en JavaScript /";
   const [postContent, setPostcontent] = useState("");
+  console.log(postContent);
 
   useEffect(() => {
     import("./forin.md").then((res) =>
@@ -25,7 +26,7 @@ const ForIn = () => {
         de texto JSON, aqui podemos entonces ver como podriamos recorrer un tipo
         de texto formateado.
       </p>
-      <Markdown>{postContent}</Markdown>
+      {/* <Markdown>{postContent}</Markdown> */}
 
       <p>
         {" "}

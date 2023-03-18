@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Markdown from "markdown-to-jsx";
+// import Markdown from "markdown-to-jsx";
 import "./style.css";
 import LatestPosts from "../../../latestposts";
 
@@ -9,6 +9,8 @@ const Props = () => {
   const title = "Props - Guia completa!";
   const content = "Aqui es cuando entran los Props.";
   const [postContent, setPostcontent] = useState("");
+  console.log(postContent);
+
   //const stats = readingTime(content);
   const stats = content;
 
@@ -41,7 +43,7 @@ const Props = () => {
         <code> console.log(users); </code> Con el map recorremos el array.
       </p>
 
-      <Markdown>{postContent}</Markdown>
+      {/* <Markdown>{postContent}</Markdown> */}
 
       <p className="">
         <b>¡Vaya hay interés eso es genial </b> :) ! Veamos entonces, si eres un

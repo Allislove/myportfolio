@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
-import Markdown from "markdown-to-jsx";
-import Code from "../../../../posts/code";
+// import Markdown from "markdown-to-jsx";
+// import Code from "../../../../posts/code";
 
 const Estado = () => {
   const title = "Estado en react - Guia completa!";
 
   const [postContent, setPostcontent] = useState('')
-  const [isDark, setIsDark] = useState(true)
+  // const [isDark, setIsDark] = useState(true)
+  console.log(postContent);
 
   useEffect(() => {
     import('./estado.md')
@@ -40,7 +41,7 @@ const Estado = () => {
 
       <pre>
         <code>
-          <Markdown
+{/*           <Markdown
             options={{
               overrides: {
                 code: {
@@ -54,7 +55,7 @@ const Estado = () => {
             }}
           >
             {postContent}
-          </Markdown>
+          </Markdown> */}
         </code>
       </pre>
 

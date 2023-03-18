@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import Markdown from "markdown-to-jsx";
+// import Markdown from "markdown-to-jsx";
 
 const Funciones = () => {
   const title = "Funciones - Functions /";
 
   const [postContent, setPostcontent] = useState("");
-
+  console.log(postContent);
   useEffect(() => {
     import("./funciones.md").then((res) =>
       fetch(res.default)
@@ -31,7 +31,7 @@ const Funciones = () => {
       </p>
       <pre>
         <code>
-          <Markdown>{postContent}</Markdown>
+          {/* <Markdown>{postContent}</Markdown> */}
         </code>
       </pre>
 

@@ -1,11 +1,13 @@
-<Code language="javascript"> import React from 'react';
 
-// Veamos algunos conceptos de las funciones.
+**import React from 'react';**
+
+# Veamos algunos conceptos de las funciones XXX.
 const suma = function (a, b) {
     const suma = a+b;
     return console.log(suma);
 }
-suma(2, 2);
+
+`suma(2, 2);`
 
 /* Esta primera forma, es cuando declaramos una variable, o const o let, lo que tu desees, 
 y luego la igualamos a una funcion, con ello logramos entonces que la variable que hemos declarado,
@@ -53,7 +55,6 @@ por ende, al momento que llamamos la función, no se le pasan argumentos, e inme
 ejecuta el Hello ARROW FUNCTION
 */  
 
- </Code>
 
 
 

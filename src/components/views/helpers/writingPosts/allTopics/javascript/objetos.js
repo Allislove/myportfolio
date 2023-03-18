@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import Markdown from "markdown-to-jsx";
+// import Markdown from "markdown-to-jsx";
 
 const Objetos = () => {
   const title = "Objetos - en JavaScript /";
   const [postContent, setPostcontent] = useState("");
+  console.log(postContent);
 
   useEffect(() => {
     import("./objetos.md").then((res) =>
@@ -27,7 +28,7 @@ const Objetos = () => {
 
       <pre>
         <code>
-          <Markdown>{postContent}</Markdown>
+          {/* <Markdown>{postContent}</Markdown> */}
         </code>
       </pre>
       <p>
