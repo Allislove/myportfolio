@@ -26,6 +26,8 @@ import ForIn from "../views/helpers/writingPosts/allTopics/javascript/forin";
 import Arreglos from "../views/helpers/writingPosts/allTopics/javascript/arreglos";
 import Objetos from "../views/helpers/writingPosts/allTopics/javascript/objetos";
 import Funciones from "../views/helpers/writingPosts/allTopics/javascript/funciones";
+import Gitfixin1 from "../views/helpers/writingPosts/allTopics/tutorials/gitfixin1";
+
 
 const Application = (props) => {
   const userIsLogged = localStorage.getItem("token");
@@ -86,6 +88,9 @@ const Application = (props) => {
         </Route>
         <Route path="/blg/arreglos+en+js">
           <Arreglos />
+        </Route>
+        <Route path="/blog/gitfixin-git-see-git-pull-1-for-details">
+          <Gitfixin1 />
         </Route>
         
 

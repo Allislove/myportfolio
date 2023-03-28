@@ -13,6 +13,23 @@ export default function Intro() {
               ¡Últimos posts!
             </h1>
             <a
+              href="/blog/gitfixin-git-see-git-pull-1-for-details"
+              className="block w-auto h-auto bg-white hover:bg-gray-200 hover:rounded-lg transition duration-300 px-4 py-2"
+            >
+              <h2 className="text-x font-bold mb-2 px-4 pt-4">
+              Error al intentar realizar git fetch && git pull
+              </h2>
+              <p className="text-gray-600 px-4 mb-4">
+                There is no tracking information for the current branch.
+                Please specify which branch you want to merge with.
+                See git-pull(1) for details.
+              </p>
+              <div className="flex items-center justify-between px-4 mb-4">
+                <span className="text-gray-400 text-sm">27/Mar-2023 </span>
+                <span className="text-gray-400 text-sm">git</span>
+              </div>
+            </a>
+            <a
               href="blg/react-props"
               className="block w-auto h-auto bg-white hover:bg-gray-200 hover:rounded-lg transition duration-300 px-4 py-2"
             >
