@@ -65,10 +65,21 @@ function Posts() {
         <p> The past, PRESENT And future</p>
         <a
           className="blog-posts"
+          href="/blog/gitfixin-git-see-git-pull-1-for-details"
+        >
+          <div>
+            <h2>Error al intentar realizar git fetch && git pull</h2>
+            <div className="meta">
+              <time dateTime="2023-03-27T20:14:00Z">27/Marzo-2023</time>
+            </div>
+          </div>
+        </a>
+        <a
+          className="blog-posts"
           href="/blg/react-props"
         >
           <div>
-            <h2>Props (Propiedades en React)</h2>
+            <h2>Props (Propiedades en React) X</h2>
             <div className="meta">
               <time dateTime="2021-11-23T23:14:00Z">23/Nov-2021</time>
             </div>
