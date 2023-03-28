@@ -76,7 +76,7 @@ function Posts() {
         </a>
         <a
           className="blog-posts"
-          href="/blg/react-props"
+          href="/blog/react-props"
         >
           <div>
             <h2>Props (Propiedades en React) X</h2>
@@ -88,7 +88,7 @@ function Posts() {
         
         <a
           className="blog-posts bst"
-          href="/blg/estado-avanzado-react"
+          href="/blog/estado-avanzado-react"
         >
           <div>
             <h2>Estado en React</h2>
@@ -100,7 +100,7 @@ function Posts() {
 
         <a
           className="blog-posts"
-          href="/blg/for+in+en+js"
+          href="/blog/for+in+en+js"
         >
           <div>
             <h2>forIn - JavaScript</h2>
@@ -112,7 +112,7 @@ function Posts() {
 
         <a
           className="blog-posts"
-          href="/blg/funciones+en+js"
+          href="/blog/funciones+en+js"
         >
           <div>
             <h2>Funciones en JavaScript</h2>
@@ -124,7 +124,7 @@ function Posts() {
 
         <a
           className="blog-posts"
-          href="/blg/objectos+en+js"
+          href="/blog/objectos+en+js"
         >
           <div>
             <h2>Objetos en JS</h2>
@@ -136,7 +136,7 @@ function Posts() {
 
         <a
           className="blog-posts"
-          href="/blg/arreglos+en+js"
+          href="/blog/arreglos+en+js"
         >
           <div>
             <h2>Arreglos en JS</h2>
@@ -150,7 +150,7 @@ function Posts() {
         <div className="bst">
         <a
           class="blog-posts"
-          href="/blg/json+tutorial"
+          href="/blog/json+tutorial"
         >
           <div>
             <h2>JSON - JavaScript Object Notation</h2>

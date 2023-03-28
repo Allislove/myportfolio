@@ -62,31 +62,31 @@ const Application = (props) => {
           <Home />
         </Route>
         {/* RUTAS ESTATICAS */}
-        <Route path="/blg/estado-avanzado-react">
+        <Route path="/blog/estado-avanzado-react">
           <Estado />
         </Route>
-        <Route path="/blg/react-hooks">
+        <Route path="/blog/react-hooks">
           <HooksGuide />
         </Route>
-        <Route path="/blg/react-props">
+        <Route path="/blog/react-props">
           <Props />
         </Route>
-        <Route path="/blg/backend-or-frontend">
+        <Route path="/blog/backend-or-frontend">
           <Versus />
         </Route>
-        <Route path="/blg/json+tutorial">
+        <Route path="/blog/json+tutorial">
           <JsonGuide />
         </Route>
-        <Route path="/blg/for+in+en+js">
+        <Route path="/blog/for+in+en+js">
           <ForIn />
         </Route>
-        <Route path="/blg/funciones+en+js">
+        <Route path="/blog/funciones+en+js">
           <Funciones />
         </Route>
-        <Route path="/blg/objectos+en+js">
+        <Route path="/blog/objectos+en+js">
           <Objetos />
         </Route>
-        <Route path="/blg/arreglos+en+js">
+        <Route path="/blog/arreglos+en+js">
           <Arreglos />
         </Route>
         <Route path="/blog/gitfixin-git-see-git-pull-1-for-details">

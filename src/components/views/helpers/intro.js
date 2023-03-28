@@ -30,7 +30,7 @@ export default function Intro() {
               </div>
             </a>
             <a
-              href="blg/react-props"
+              href="blog/react-props"
               className="block w-auto h-auto bg-white hover:bg-gray-200 hover:rounded-lg transition duration-300 px-4 py-2"
             >
               <h2 className="text-x font-bold mb-2 px-4 pt-4">
@@ -49,7 +49,7 @@ export default function Intro() {
               </div>
             </a>
             <a
-              href="blg/estado-avanzado-react"
+              href="blog/estado-avanzado-react"
               className="block w-auto h-auto bg-white hover:bg-gray-200 hover:rounded-lg transition duration-300 px-4 py-2"
             >
               <h2 className="text-x font-bold mb-2 px-4 pt-4">
@@ -70,7 +70,7 @@ export default function Intro() {
               </div>
             </a>
             <a
-              href="blg/for+in+en+js"
+              href="blog/for+in+en+js"
               className="block w-auto h-auto bg-white hover:bg-gray-200 hover:rounded-lg transition duration-300 px-4 py-2"
             >
               <h2 className="text-x font-bold mb-2 px-4 pt-4">
