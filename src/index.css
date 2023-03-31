@@ -6,6 +6,11 @@
   background: red;
 } */
 
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+
 .ioform {
   margin: 20 auto;
   padding: 40px;
