@@ -28,6 +28,12 @@ import Objetos from "../views/helpers/writingPosts/allTopics/javascript/objetos"
 import Funciones from "../views/helpers/writingPosts/allTopics/javascript/funciones";
 import Gitfixin1 from "../views/helpers/writingPosts/allTopics/tutorials/gitfixin1";
 
+/* Programming Langs topics */
+import Csharp from "../views/extra/csharp";
+import Cplusplus from "../views/extra/cplusplus";
+import Css from "../views/extra/css";
+import Sql from "../views/extra/sql";
+import Javascript from "../views/extra/javascript";
 
 const Application = (props) => {
   const userIsLogged = localStorage.getItem("token");
@@ -60,6 +66,21 @@ const Application = (props) => {
         </Route>
         <Route exact path="/logout">
           <Home />
+        </Route>
+        <Route exact path="/csharp">
+          <Csharp />
+        </Route>
+        <Route exact path="/cplusplus">
+          <Cplusplus />
+        </Route>
+        <Route exact path="/css">
+          <Css />
+        </Route>
+        <Route exact path="/sql">
+          <Sql />
+        </Route>
+        <Route exact path="/javascript">
+          <Javascript />
         </Route>
         {/* RUTAS ESTATICAS */}
         <Route path="/blog/estado-avanzado-react">
