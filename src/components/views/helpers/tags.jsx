@@ -9,7 +9,7 @@ export default function Tags() {
         { name: 'C++', href: '/cplusplus', bgColor: 'bg-blue-900' },
         { name: 'SQL', href: '/sql', bgColor: 'bg-green-700' },
         { name: 'CSS', href: '/css', bgColor: 'bg-purple-900' },
-        { name: 'C#', href: '/c#', bgColor: 'bg-cyan-500' },
+        { name: 'C#', href: '/csharp', bgColor: 'bg-cyan-500' },
     ]
 
     return (
