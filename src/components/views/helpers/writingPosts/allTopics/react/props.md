@@ -1,53 +1,60 @@
 # **Props - Guia completa!**  
 
-Vamos a leer y a comprender el Component View.jsx. Este componente contiene la data de los Usuarios, (Data que hemos creado aqui mismo!) pero esta data, va a ser representada y manipulada directamente desde el componente de users.jsx, con esto logramos encapsular nuestro código y asi tener un mayor control sobre el mismo. Luego tenemos el Component Users.jsx Recibimos las propiedades que le pasamos desde el componente view, y ahora trabajamos con ellas, logrando asi que nuestro componente de users.jsx, pueda manipular la data  (users="allUsers" )  que nosotros le pasamos desde el componente view. Descomenta si deseas ver que contiene users, antes de ser mostrado en el navegador!  console.log(users);  Con el map recorremos el array.
+Vamos a leer y a comprender el Component View.jsx. Este componente contiene la data de los Usuarios, (Data que hemos creado aqui mismo!) pero esta data, va a ser representada y manipulada directamente desde el componente de users.jsx, con esto logramos encapsular nuestro código y asi tener un mayor control sobre el mismo. Luego tenemos el Component Users.jsx Recibimos las propiedades que le pasamos desde el componente view, y ahora trabajamos con ellas, logrando asi que nuestro componente de users.jsx, pueda manipular la data  (users="allUsers" )  que nosotros le pasamos desde el componente view.
+Descomenta si deseas ver que contiene users, antes de ser mostrado en el navegador!  console.log(users);  Con el map recorremos el array.
 
-    import React from 'react';
-    import React from 'react'
-    import Users from './users';
-    
-    const View = (props) => {
-    const allUsers = [
-        { id: 1, "name": "Jesús" },
-        { id: 2, "name": "Andres" },
-        { id: 3, "name": "Bill Gates" },
-        { id: 4, "name": "Douglas Crockford" },
-        { id: 5, "name": "Jeff Bezos" },
-    ]
-    
-    return(
-        
-    );
-        }
-    
-    export default View;
-    
-    // Analiza cada uno de los componentes si es necesario para entenderlos de una   
-    manera mas agradable!
-    
-    import React from 'react'
-    
-    const Users = (props) => {
-        const users = props.users;
-        const title = props.title;
-    
-        const renderUsers = users.map((user, index) => {
-            return(
-            
-            { user.name }
-                    
-            )
-        })
-        return(
-    
-        { title }
-        { renderUsers }
-    
-    );
-    }
-    
-    export default Users;  
+```js
+// Este es el primer componente, View.jsx
 
+import React from 'react';
+import Users from './users';
+
+const View = (props) => {
+  const allUsers = [
+    { id: 1, "name": "Jesús" },
+    { id: 2, "name": "Andres" },
+    { id: 3, "name": "Bill Gates" },
+    { id: 4, "name": "Douglas Crockford" },
+    { id: 5, "name": "Jeff Bezos" },
+  ]
+
+  return (
+    <div className="userLists">
+        <Users users={ allUsers } title="Lista de Usuarios!" />
+    </div>
+);
+}
+
+export default View;
+
+// Analiza cada uno de los componentes para entenderlos de una   
+manera mas agradable!
+
+
+// Este es el segundo componente, Users.jsx
+
+import React from 'react'
+
+const Users = (props) => {
+  const users = props.users;
+  const title = props.title;
+
+  const renderUsers = users.map((user, index) => {
+    return (
+      { user.name }
+    )
+  })
+  return (
+    <div>
+      <h2>{ title }</h2>
+      { renderUsers }
+    </div>
+);
+}
+
+export default Users;   
+
+```   
 
 
 ¡Vaya hay interés eso es genial :) ! Veamos entonces, si eres un programador con más de un año de experiencia, podria ser que te has encontrado con problemas en diseño que te llevan a preguntarte o te hacen ver, que ya existe un componente que contiene dicha informacion y además esta en perfecto estado, pero te das de cuenta de que no debes usar toda la informacion del componente, solo necesitas usar una parte de la misma, por ejemplo, mostrar una imagen, producto o un código de descuento dependiendo si el usuario esta registrado o no, ¿Rayos pues ya tengo este componente creado? ¿Voy a editarle algunas cosas y creo otro con solo lo que necesito? Noo, no es necesario!
@@ -60,7 +67,7 @@ Vamos a leer y a comprender el Component View.jsx. Este componente contiene la d
 Por ende, supondremos pues que ya existe un **componente con nombre Book.js (Que sera el componente hijo),** y tambien que hay un **componente Products(Products.js),** que es el que engloba, cada uno de los productos(Book.js), el componente hijo tiene una propiedad llamada descuento, que sea donde aplicaremos el porcentaje a descontar de cada articulo, sabemos que en este caso son libros, puede ser cualquier otro producto, ¿Que hacemos ahora para que todo esto se cumpla y además muestre entonces el precio acorde para cada usuario que visite nuestro Sitio Web?
 Te mostrare entonces primero unas imagenes del código, para que comprendamos un poco mejor!
 
-https://i.ibb.co/bNZVwzL/props-Hijo-Component.png![Props](//images.ctfassets.net/hhragbcnrbkm/4ytWfYL6voOKkrjpoweyZf/1c89747af0ee416b007dc66e48678446/props-Hijo-Component.png)
+![Props](//images.ctfassets.net/hhragbcnrbkm/4ytWfYL6voOKkrjpoweyZf/1c89747af0ee416b007dc66e48678446/props-Hijo-Component.png)
 
 
 **Componente props hijo**
