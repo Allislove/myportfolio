@@ -19,7 +19,7 @@ const Estado = () => {
   }, [])
 
   return (
-    <div className="main">
+    <div className="main spetial-reading-view">
       <ReactMarkdown>{postContent}</ReactMarkdown>
     </div>
   );

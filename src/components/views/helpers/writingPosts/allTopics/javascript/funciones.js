@@ -17,7 +17,7 @@ const Funciones = () => {
   }, []);
 
   return (
-    <div className="main">
+    <div className="main spetial-reading-view">
       {/* <h1> {title} </h1> */}
           <ReactMarkdown>{postContent}</ReactMarkdown>
 
