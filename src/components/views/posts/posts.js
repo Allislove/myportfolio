@@ -79,7 +79,7 @@ function Posts() {
           href="/blog/react-props"
         >
           <div>
-            <h2>Props (Propiedades en React) X</h2>
+            <h2>Props (Propiedades en React)</h2>
             <div className="meta">
               <time dateTime="2021-11-23T23:14:00Z">23/Nov-2021</time>
             </div>
