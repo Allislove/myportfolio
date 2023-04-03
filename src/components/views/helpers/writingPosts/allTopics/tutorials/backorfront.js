@@ -7,7 +7,7 @@ const Versus = () => {
   const subTitle = "La pregunta que muchos nos hacemos...!";
 
   return (
-    <div className="main-blog-content">
+    <div className="main spetial-reading-view">
       <h1> {title} </h1>
       <h6> {subTitle} </h6>
 

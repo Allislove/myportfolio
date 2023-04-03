@@ -17,7 +17,7 @@ const Arreglos = () => {
   }, []);
 
   return (
-    <div className="main">
+    <div className="main spetial-reading-view">
       <div className="markdown-body">
         <ReactMarkdown>{postContent}</ReactMarkdown>
       </div>

@@ -46,7 +46,7 @@ const Props = () => {
   }, []);
 
   return (
-    <div className="main">
+    <div className="main spetial-reading-view">
       {/* <h1> {title} </h1> */}
       <p className="reading-time"> {postContent.text}</p>
       <ReactMarkdown
