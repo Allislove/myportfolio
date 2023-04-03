@@ -151,7 +151,13 @@ strong a {
   background-color: #0463c8;
 }
 
-
-
-
-
+.spetial-reading-view {
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 6px 8px rgb(0 0 0 / 7%);
+  backdrop-filter: blur(20 px );
+  z-index: 2;
+  border: 1.5px solid rgba(0,0,0,.13);
+  margin: 1% auto;
+  padding: 30px;
+  width: 100%;
+}

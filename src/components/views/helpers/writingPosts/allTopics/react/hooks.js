@@ -16,7 +16,7 @@ const HooksGuide = () => {
   }, []);
 
   return (
-    <div className="main-blog-content">
+    <div className="main spetial-reading-view">
       <h1> {title} </h1>
 
       {/* <Markdown>{postContent}</Markdown> */}
