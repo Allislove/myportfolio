@@ -89,24 +89,6 @@ export default function Intro() {
           </div>
 
         </div>
-        <div className="sm:col max-w-auto sm:w-128 sm:hover:border-black-200 w-180 sm:shadow-2xl bg-gray-100 sm:bg-gray-100
-         transition duration-300 overflow-auto sm:transition sm:duration-300 sm:overflow-auto"
-            style={{ maxWidth: "280px", minHeight: "100%", maxHeight: "280px" }}
-          >
-            <span>
-              <img
-                style={{ width: 140, height: 140 }}
-                src="https://img.icons8.com/officel/512/maintenance.png"
-                alt="SITE IS UNDER MAINTENANCE"
-              />
-            </span>
-            <span
-              className="sm:bg-[yellow]  sm:flex-none sm:w-auto sm:h-auto
-            bg-[yellow] flex-none w-auto h-auto"
-            >
-              SITE IS UNDER MAINTENANCE
-            </span>
-        </div>
       </section>
     </>
   );
