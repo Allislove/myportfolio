@@ -1,61 +1,70 @@
-# **Estado en react - Guia completa!**  
+**Estado en React - Guía completa!**
 
-En el dialogo de código de ejemplo más abajo, se explica a detalle muchas de las lineas del mismo, para comprender mejor el estado en React, Veamos entonces ahora algunas ideas de lo que tengo en mi mente acerca de este, tenemos una clase y luego un estado, este sera rende-rizado cada vez que se actualice la fecha que estamos llamando en el código, *(date: new Date()),* este elemento es el estado inicial, luego de ello analiza el código que esta abajo para poder comprender su funcionamiento, no te olvides de leer las lineas comentadas //.. Esas son las que explican a detalle el código. # Nota: **Si quieres tener más acercamiento visualizando el cambio constante de ComponentDidMount(), descomenta la linea 21 del Componente(Clock.jsx), pero antes debes de tener abierta la consola de el navegador.** Esta te mostrara que cada segundo que pasa la variable (counter) aumentaría su valor cada vez de 1 en 1, debido al intervalo que hemos utilizado para mostrar la hora. *Cuando des-comentes esta línea y veas el resultado en la consola, trata de volver a comentarla rápido, debido al desbordamiento de pila.*
+En React, ***el estado es un objeto que almacena información que puede cambiar durante el ciclo de vida del componente.*** Cuando el estado cambia, el componente se vuelve a renderizar para mostrar los cambios en la interfaz de usuario. En esta guía, analizaremos un ejemplo de un componente de reloj en React que utiliza el estado para mostrar la hora actual.   
 
-    import React from 'react';
-    
-    class Clock extends React.Component {
-       constructor(props) {
-        super(props);
-        // Definmos el estado, con la fecha actual
-        this.state = {
-            date: new Date(),
-        }
-        }
-       // Metodo de montaje, se ejecuta despues de que la salida 
-        del componete ha sido renderizada.
-       // Este metodo sera de gran importancia para que el estado(date), 
-       // se actualice cada vez, que setState se llama
-       // Le pasamos el intervalo, por ende cada segundo este metodo 
-       // sera llamado, y llamara ahora, al metodo **actualizarEstado();**
+Ejemplo de componente de reloj:   
 
-       componentDidMount() {
-        let counter = 0;
-        this.TimerId = setInterval(() => {
-            counter += 1;
-            //console.log('Mira el pasar del contador: ', + counter);
-            this.actualizarEstado();
-        });
-       }
-    
-       // Si desmontamos el componente(Clock), este metodo se ejecutaria y 
-       // quitaria la actualizacion que se muestra en pantalla cada segundo.
-       componentWillUnmount() {
-        // Llamamos a clearInterval, para limpiar el intervalo!
-        clearInterval(this.TimerId);
-       }
-    
-       /* Creamos un metodo para poder actualizar el estado inicial, de nuestro 
-           dato(date), y como logramos esto?
-            Esto lo logramos gracias al metodo setState, que le pasamos 
-            un objeto, e identificamos nuestro dato(variable),
-            en este caso es date, que vamos a actualizar. */
-            actualizarEstado() {
-    // Llamamos el metodo setState.. Es la unica y mejor forma para hacerlo.
-        this.setState({
-            date: new Date(),
-        })
-       }
-    
-       render() {
-        return(
-            <div>
-                <h1> Clock / Reloj</h1>
-                <b className="blue"> { this.state.date.toLocaleTimeString() } </b>
-            </div>
-        );
-       }
-    }
-    
-    export default Clock;
 
+```
+import React from 'react';
+
+class Clock extends React.Component {
+  constructor(props) {
+    super(props);
+
+    // Definimos el estado inicial con la fecha actual
+    this.state = {
+      date: new Date(),
+    };
+  }
+
+  componentDidMount() {
+    this.timerId = setInterval(() => {
+      this.actualizarEstado();
+    }, 1000);
+  }
+```
+El **método componentDidMount** se ejecuta después de que la salida del componente ha sido renderizada.
+Este método es importante para que el **estado** ***(date)*** se actualice cada vez que se llama setState.
+Le pasamos el intervalo, por lo que este método se llamará cada segundo y llamará al método actualizarEstado.
+
+Existe tambien la forma de desmontar un componente, en este caso si vamos a desmontar el **componente (Clock)**, este método se ejecutará y quitará la actualización que se muestra en pantalla cada segundo.
+
+```
+componentWillUnmount() {
+    clearInterval(this.timerId);
+  }
+```   
+
+
+**¿¡Ahora!, vamos a actualizar el estado.**   
+
+```
+actualizarEstado() {
+    this.setState({
+      date: new Date(),
+    });
+  }
+
+  render() {
+    return (
+      <div>
+        <h1> Clock / Reloj</h1>
+        <b className="blue"> { this.state.date.toLocaleTimeString() } </b>
+      </div>
+    );
+  }
+}
+
+export default Clock;
+```
+
+Como pudimos ver entonces, en el ejemplo anterior se utiliza el **componente de clase Clock que define el estado inicial** en su constructor y lo actualiza cada segundo usando el método ***componentDidMount()*** y ***setInterval()***. También se utiliza el método ***componentWillUnmount()*** para limpiar el intervalo cuando el componente se desmonta.
+
+***El método actualizarEstado()*** utiliza el método ***setState() para actualizar el estado inicial del componente.*** Este método toma un ***objeto*** que contiene las propiedades del estado que se desean actualizar y realiza un merge con el estado actual del componente.
+
+En el método ***render()***, se muestra la hora actual usando la variable de fecha del estado y el método toLocaleTimeString().
+
+Espero que esta guía haya sido útil para comprender mejor el uso del estado en React. Recuerda que el estado es una parte importante de la programación en React y es útil para almacenar y actualizar información dinámica en los componentes.
+
+***Aqui hemos visto pues una de las primeras formas de como se declaraba y usaba el estado en React, ahora existen maneras mucho más facil de manera esto, como por ejemplo usar Hooks de React, que es un gran invento en esta tecnologia.***
