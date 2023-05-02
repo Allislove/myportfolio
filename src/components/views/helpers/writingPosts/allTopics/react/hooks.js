@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
-// import Markdown from "markdown-to-jsx";
+import ReactMarkdown from "react-markdown";
+
 
 const HooksGuide = () => {
-  const title = "HOOKS en React/";
+  const title = "Hooks en React";
   const [postContent, setPostcontent] = useState("");
   console.log(postContent);
 
@@ -17,9 +18,12 @@ const HooksGuide = () => {
 
   return (
     <div className="main spetial-reading-view">
-      <h1> {title} </h1>
+      <h1 className="blog-titles"> {title} </h1>
 
-      {/* <Markdown>{postContent}</Markdown> */}
+      <ReactMarkdown>{postContent}</ReactMarkdown>
+
+      <a className="learnmore" href="https://es.react.dev/reference/react" rel="noreferrer" target="_blank"> Aprender más de los Hooks en React</a>
+      
     </div>
   );
 };

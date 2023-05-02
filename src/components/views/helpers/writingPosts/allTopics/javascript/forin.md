@@ -1,5 +1,3 @@
-# **Uso del (For In) en JavaScript**
-
 Instrucción que utilizamos generalmente para iterar sobre Objetos de javascript, lo que agiliza el procesamiento de información a la hora de que queremos acceder a determinadas claves y valores de estos mismos. Mira más abajo el ejemplo, donde hemos creado un array llamado users, que contiene un tipo de texto JSON, aqui podemos entonces ver como podriamos recorrer un tipo de texto formateado.
 
 Es una instrucción que utilizamos generalmente para iterar sobre Objetos de javascript, lo que agiliza el prose a la hora de que queremos acceder a determinadas claves y valores de estos mismos. Mira más abajo el ejemplo, donde hemos creado un array llamado users, que contiene un tipo de texto JSON, aqui podemos entonces ver como podriamos recorrer un tipo de texto formateado.

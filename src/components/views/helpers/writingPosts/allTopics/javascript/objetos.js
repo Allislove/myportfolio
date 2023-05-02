@@ -3,7 +3,7 @@ import ReactMarkdown from "react-markdown";
 
 
 const Objetos = () => {
-  // const title = "Objetos - en JavaScript /";
+  const title = "Objetos - en JavaScript";
   const [postContent, setPostcontent] = useState("");
   console.log(postContent);
 
@@ -18,7 +18,7 @@ const Objetos = () => {
 
   return (
     <div className="main spetial-reading-view">
-      {/* <h1> {title} </h1> */}
+      <h1 className="blog-titles"> {title} </h1>
       <ReactMarkdown>{postContent}</ReactMarkdown>
 
       {" "}

@@ -1,5 +1,3 @@
-# ***Hoy vamos a hablar un poco acercá de los **Arreglos en JavaScript*****  
-
 Es un objeto de tipo lista de alto nivel, que queremos decir con tipo
 lista? Pues, en este objeto podemos almacenar cualquier candidad de
 valores, los que deseemos, y necesitemos para su uso en el momento indicado .:.
@@ -17,8 +15,8 @@ valores, los que deseemos, y necesitemos para su uso en el momento indicado .:.
 y con ello entonces conseguimos que se convierta en una lista, este método consta de multiples metodos, para su propia alimentación y que nos seran muy util, en el día a dia como Desarrolladores Web, existen muchos como .push(), .unshift(), .pop(), y muchos más
 Abajo en el código te dejare en cada linea la explicación de cada uno de
 ellos, y al final podras sumergirte de una manera más amena en este
-maravilloso mundo. No olvides consultar la URL, que siempre les dejo al
-final.   
+maravilloso mundo. No olvides consultar la URL, que siempre les dejo
+ alfinal.   
 
 ---
 
@@ -29,17 +27,21 @@ final.
     consola del navegador como la linea siguiente :*/
     [ 'perro', 'gato'. 'dinosaurio', 'aguila', 'leon' ]
 
-    /* Simplemente leé la variable animals con el  metodo console.log() de JavaScript. */
+    /* Simplemente leé la variable animals 
+    con el metodo console.log() de JavaScript. */
 
-    // Llamamos la const animals y le mandamos un valor a la ultima posición
+    // Llamamos la const animals y le mandamos 
+    // un valor a la ultima posición
     animals.push("OSO"); 
 
     Mostramos el resultado en la consola del navegador nuevamente.
-    console.log(animals); // Mostramos el array de animals en la consola y nos trae:
+    console.log(animals); 
+    // Mostramos el array de animals en la consola y nos trae:
 
     // [ 'perro', 'gato'. 'dinosaurio', 'aguila', 'leon', 'OSO' ]
 
-    // Veremos más acerca de los métodos implementados para los arrays en otra guia.  
+    // Veremos más acerca de los métodos implementados 
+    para los arrays en otra guia.  
 
     // entonces ahora sabemos que este metodo se utiliza 
     para agregar valores al final de un array   
@@ -75,7 +77,9 @@ final.
 
 *Veamos ahora el uso del **Método unshift()***
 
-    /* Y por ultimo tenemos el metodo unshift(), que hace lo contrario al médoto push(), 
-    este agrega elementos l inicio del array, es decir los posiciona en el indice 0*/  
+    /* Y por ultimo tenemos el metodo unshift(), 
+    que hace lo contrario al médoto push(), 
+    este agrega elementos l inicio del array, 
+    es decir los posiciona en el indice 0*/  
     animales.unshift("PANDA");
     console.log(animales);

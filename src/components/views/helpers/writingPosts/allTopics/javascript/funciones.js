@@ -3,7 +3,7 @@ import ReactMarkdown from "react-markdown";
 
 
 const Funciones = () => {
-  // const title = "Funciones - Functions /";
+  const title = "Funciones en JavaScript";
 
   const [postContent, setPostcontent] = useState("");
   console.log(postContent);
@@ -18,7 +18,8 @@ const Funciones = () => {
 
   return (
     <div className="main spetial-reading-view">
-      {/* <h1> {title} </h1> */}
+      <h1 className="blog-titles"> {title} </h1>
+      
           <ReactMarkdown>{postContent}</ReactMarkdown>
 
       <p>

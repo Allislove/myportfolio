@@ -65,6 +65,19 @@ function Posts() {
         <p> The past, PRESENT And future</p>
         <a
           className="blog-posts"
+          href="/blog/react-hooks"
+        >
+          <div>
+            <h2>React Hooks</h2>
+            <div className="meta">
+              <time dateTime="2023-05-01T16:14:00Z">1/Mayo-2023</time>
+            </div>
+          </div>
+        </a>
+
+
+        <a
+          className="blog-posts"
           href="/blog/gitfixin-git-see-git-pull-1-for-details"
         >
           <div>
