@@ -1,5 +1,3 @@
-# **Props - Guia completa!**  
-
 Vamos a leer y a comprender el Component View.jsx. Este componente contiene la data de los Usuarios, (Data que hemos creado aqui mismo!) pero esta data, va a ser representada y manipulada directamente desde el componente de users.jsx, con esto logramos encapsular nuestro código y asi tener un mayor control sobre el mismo. Luego tenemos el Component Users.jsx Recibimos las propiedades que le pasamos desde el componente view, y ahora trabajamos con ellas, logrando asi que nuestro componente de users.jsx, pueda manipular la data  (users="allUsers" )  que nosotros le pasamos desde el componente view.
 Descomenta si deseas ver que contiene users, antes de ser mostrado en el navegador!  console.log(users);  Con el map recorremos el array.
 

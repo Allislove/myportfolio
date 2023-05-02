@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 
 const Estado = () => {
-  // const title = "Estado en react - Guia completa!";
+  const title = "Estado en react - Guia completa!";
 
   const [postContent, setPostcontent] = useState('')
   // const [isDark, setIsDark] = useState(true)
@@ -20,6 +20,7 @@ const Estado = () => {
 
   return (
     <div className="main spetial-reading-view">
+      <h1 className="blog-titles"> {title} </h1>
       <ReactMarkdown>{postContent}</ReactMarkdown>
     </div>
   );

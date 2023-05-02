@@ -1,5 +1,3 @@
-# ***Funciones en JavaScript***  
-
 Las funciones, ¿Que podríamos entender de ellas ?, ¡piensa!, ¿Le distes una buena respuesta ah? :) Genial! pues ahora te cuento lo que entiendo de ellas, es una forma en que podemos envolver nuestro código, para que sea reutilizable, tener nuestro código mas limpio, para agilizar nuestras tareas, para llamar una parte del código cuando lo deseemos, y asi hacer uso de los Condicionales **(Yo buscaria en google: Condicionales en JS, MDN),** de una mejor forma y teniendo un control sobre las variables, con ello entonces al final logramos una simplicidad de las cosas en nuestro software con una manera muy sencilla y  grata de trabajar. 
 Ahora pues, Existen varias formas de crear funciones, veámoslas abajo.
 

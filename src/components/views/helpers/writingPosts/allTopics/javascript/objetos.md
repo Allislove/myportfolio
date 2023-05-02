@@ -1,5 +1,3 @@
-__Objetos en JavaScript__
-
 Casi todo en JavaScript es un objeto, por ende quiero mostrarte estas dos formas de crear un Objeto en JavaScript, y asi tener una mejor visión de como estan formado los demás, como las Function(), los Array(), Boolean(), etc. Además te muestro algo básico en la forma en que se acceden estos objetos.
 
 Existen dos formas de inicializar un Objeto, con la instancia de 
