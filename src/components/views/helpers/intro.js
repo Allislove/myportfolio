@@ -13,6 +13,23 @@ export default function Intro() {
               ¡Últimos posts!
             </h1>
             <a
+              href="/blog/react-hooks"
+              className="block w-auto h-auto bg-white hover:bg-gray-200 hover:rounded-lg transition duration-300 px-4 py-2"
+            >
+              <h2 className="text-x font-bold mb-2 px-4 pt-4">
+              Hooks en React
+              </h2>
+              <p className="text-gray-600 px-4 mb-4">
+              Los Hooks son una característica de React que nos permite 
+              usar el estado y otros características de React sin tener 
+              que escribir una clase. En lugar de eso, podemos usar funciones.
+              </p>
+              <div className="flex items-center justify-between px-4 mb-4">
+                <span className="text-gray-400 text-sm">1/May-2023 </span>
+                <span className="text-gray-400 text-sm">React</span>
+              </div>
+            </a>
+            <a
               href="/blog/gitfixin-git-see-git-pull-1-for-details"
               className="block w-auto h-auto bg-white hover:bg-gray-200 hover:rounded-lg transition duration-300 px-4 py-2"
             >

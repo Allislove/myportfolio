@@ -10,7 +10,7 @@ import { tomorrow } from 'react-syntax-highlighter/dist/esm/styles/prism'; */
 //const readingTime = require("reading-time");
 
 const Props = () => {
-  // const title = "Props - Guia completa!";
+  const title = "Props - Guia";
   // const content = "Aqui es cuando entran los Props.";
   const [postContent, setPostcontent] = useState("");
   // console.log(postContent);
@@ -47,7 +47,8 @@ const Props = () => {
 
   return (
     <div className="main spetial-reading-view">
-      {/* <h1> {title} </h1> */}
+      <h1 className="blog-titles"> {title} </h1>
+
       <p className="reading-time"> {postContent.text}</p>
       <ReactMarkdown
 /*         components={{

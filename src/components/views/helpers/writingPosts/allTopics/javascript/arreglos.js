@@ -3,7 +3,7 @@ import ReactMarkdown from 'react-markdown'
 import '../../../../posts/cstyle.css'
 
 const Arreglos = () => {
-
+  const title = "Arreglos en JavaScript";
   const [postContent, setPostcontent] = useState("");
   // console.log(postContent);
 
@@ -18,6 +18,7 @@ const Arreglos = () => {
 
   return (
     <div className="main spetial-reading-view">
+      <h1 className="blog-titles"> {title} </h1>
       <div className="markdown-body">
         <ReactMarkdown>{postContent}</ReactMarkdown>
       </div>
