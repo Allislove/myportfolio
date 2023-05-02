@@ -1,5 +1,3 @@
-# **Error al intentar realizar git fetch && git pull**
- 
 There is no tracking information for the current branch.
 Please specify which branch you want to merge with.
 See git-pull(1) for details.
