@@ -22,7 +22,7 @@ const Arreglos = () => {
       <div className="markdown-body">
         <ReactMarkdown>{postContent}</ReactMarkdown>
       </div>
-      <p>
+      <p className="learnmore">
         {" "}
         Quieres aprender mas?{" "}
         <b>
@@ -31,7 +31,7 @@ const Arreglos = () => {
             href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array"
             target="blank"
           >
-            Aprender más de Arreglos
+            ¡más acerca de Arreglos!
           </a>{" "}
         </b>
       </p>
