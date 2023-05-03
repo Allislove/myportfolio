@@ -1,17 +1,18 @@
 Es un objeto de tipo lista de alto nivel, que queremos decir con tipo
 lista? Pues, en este objeto podemos almacenar cualquier candidad de
 valores, los que deseemos, y necesitemos para su uso en el momento indicado .:.
-*__Un arreglo en JavaScript puede contener cualquier tipo de dato válido de JavaScript, incluyendo:__*  
-1. Números: enteros y decimales
-2. Cadenas de texto
-3. Booleanos: true y false
-4. Objetos: objetos literales, instancias de clases, funciones, etc.
-5. Arreglos: se pueden anidar arreglos dentro de otros arreglos
-6. Undefined: una variable que no ha sido asignada un valor
-7. Null: un valor nulo intencionalmente asignado a una variable
-8. Symbol: un tipo de dato introducido en ECMAScript 6 para crear identificadores únicos.  
+*__Un arreglo en JavaScript puede contener cualquier tipo de dato válido de JavaScript, incluyendo:__*   
 
-*Es importante tener en cuenta que un arreglo en JavaScript no tiene que contener solo un tipo de dato, es decir, puede contener una mezcla de los tipos de datos mencionados anteriormente.*
+> 1. Números: enteros y decimales  
+> 2. Cadenas de texto: "Esto es una cadena de texto";
+> 3. Booleanos: true y false  
+> 4. Objetos: objetos literales, instancias de clases, funciones, etc.  
+> 5. Arreglos: se pueden anidar arreglos dentro de otros arreglos [[hello]]  
+> 6. Undefined: una variable que no ha sido asignada un valor  
+> 7. Null: un valor nulo intencionalmente asignado a una variable  
+> 8. Symbol: un tipo de dato introducido en ECMAScript 6 para crear identificadores únicos.  
+
+**Es importante tener en cuenta que un arreglo en JavaScript no tiene que contener solo un tipo de dato, es decir, puede contener una mezcla de los tipos de datos mencionados anteriormente.**
 y con ello entonces conseguimos que se convierta en una lista, este método consta de multiples metodos, para su propia alimentación y que nos seran muy util, en el día a dia como Desarrolladores Web, existen muchos como .push(), .unshift(), .pop(), y muchos más
 Abajo en el código te dejare en cada linea la explicación de cada uno de
 ellos, y al final podras sumergirte de una manera más amena en este
@@ -57,10 +58,9 @@ maravilloso mundo. No olvides consultar la URL, que siempre les dejo
     a tener sus valores iniciales, 
     asi es, es porque este método elimina el ultimo elemento de la lista*/    
 
-*Veamos ahora el uso del **Método shift()***
+*Veamos ahora el uso del **Método shift()***   
 
-    // Este elimina el primer elemento del 
-    // array en este caso es el de la posición 0 = ( = 0) del array, 'perro',   
+Este elimina el primer elemento del array en este caso es el de la posición 0 = (cero) del array, 'perro',   
 
     animales.shift();
     console.log(animales);
@@ -75,11 +75,12 @@ maravilloso mundo. No olvides consultar la URL, que siempre les dejo
 
 
 
-*Veamos ahora el uso del **Método unshift()***
+*Veamos ahora el uso del **Método unshift()***:  
+Y por ultimo tenemos el metodo unshift(), 
+que hace lo contrario al médoto push(), 
+este agrega elementos al inicio del array, 
+es decir los posiciona en el indice 0 (cero)  
 
-    /* Y por ultimo tenemos el metodo unshift(), 
-    que hace lo contrario al médoto push(), 
-    este agrega elementos l inicio del array, 
-    es decir los posiciona en el indice 0*/  
+
     animales.unshift("PANDA");
     console.log(animales);
