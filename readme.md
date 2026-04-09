@@ -3,7 +3,7 @@
 
 ## Sitio Web Personal
 
-- **# Software Engineering Student**
+- **# Software Engineering **
 - **Name:** Andrés Felipe Romaña Romaña
 
 ### `Pais`
